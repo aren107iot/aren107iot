@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* : 偽元素 */
+
+        /* 未連結過 */
+        a:link{
+            color: green;
+        }
+
+        /* 連結過的 */
+        a:visited{
+            color: lightpink;
+        }
+
+        /* 滑過去時 */
+        a:hover{
+            color: blueviolet;
+        }
+
+        /* 滑鼠左鍵壓下 */
+        a:active{
+            color: lightseagreen;
+        }        
+
+        /* 選到時 */
+        input:focus{
+            background-color: aquamarine;
+        }
+        p:nth-child(odd){
+            color:red;
+        }
+
+        p:nth-child(even){
+            color:lightpink;
+        }
+
+        p:nth-child(1){
+            color:green;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="./test.html">go test</a>
+
+    <form action="">
+        <p>
+            <label for="name">名字</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="age">年紀</label>
+            <input type="text" name="age" id="age">
+        </p>
+        <p>
+            <label for="mobile">電話</label>
+            <input type="text" name="mobile" id="mobile">
+        </p>
+        <p>
+            <label for="address">地址</label>
+            <input type="text" name="address" id="address">
+        </p>
+
+    </form>
+</body>
+</html>

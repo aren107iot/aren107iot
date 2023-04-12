@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+            width: 80%;
+            height: "200px";
+        }
+
+        h1 {
+            text-align: center;
+            -webkit-text-fill-color: brown;
+        }
+
+        td {
+            border: 1px;
+        }
+
+        #name,
+        #add,
+        #birth,
+        #unit,
+        #title,
+        #ST {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>員工基本資料</h1>
+    <!-- <table> -->
+    <form action="url" method="">
+        <!-- <tr> -->
+        <!-- <td >單位</td>
+                <td rowspan="5">單位</td> -->
+        <!-- </tr> -->
+        <fieldset>
+            <legend>個人資料</legend>
+            <p>
+                <!-- text 文字 -->
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name" value="">
+            </p>
+            <p>
+                <!-- text 文字 -->
+                <label for="birth">年次：</label>
+                <input type="month" name="birth" id="birth">
+            </p>
+            <p>
+                <!-- text 文字 -->
+                <label for="sex">性別：</label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male">男</label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female">女</label>
+            </p>
+            <p>
+                <!-- text 文字 -->
+                <label for="add">住址：</label>
+                <input type="text" name="add" id="add" value="">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>應徵職稱</legend>
+            <p>
+                <!-- text 文字 -->
+                <label for="unit">單位：</label>
+            
+                <select name="unit" id="unit">
+                    <option value="1">企劃部
+                    <option value="2" selected>人事室
+                    <option value="3">工程部
+                </select>
+            
+            </p>
+            <p>
+                <!-- text 文字 -->
+                <label for="title">職稱：</label>
+                <select name="title" id="title">
+                    <option value="1">科員
+                    <option value="2" selected>專員
+                    <option value="3">工程師
+                </select>
+            </p>
+
+        </fieldset>
+        <p>
+            <!-- hidden 隱藏欄位 -->
+            <input type="hidden" name="vip" value="good">
+            <!-- submit 送出form表單 -->
+            <input type="submit" name="" id="" value="送出">
+            <!-- reset 重設form表單 -->
+            <input type="reset" vale="重設">
+        </p>
+    </form>
+    </form>
+    <!-- </table> -->
+</body>
+
+</html>

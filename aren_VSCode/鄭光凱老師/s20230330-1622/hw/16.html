@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="url" method="">
+        <fieldset>
+            <legend>員工表格</legend>
+            <!-- text 文字 number 數字 -->
+            <p>
+                <label for="name">姓名</label>
+                <input type="text" name="name" id="name">
+                <label for="name">年齡</label>
+                <input type="number" name="number" id="number">
+            </p>
+            <p>
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </p>
+            <p>
+                <label for="tel">手機電話</label>
+                <input type="telt" name="usertel" id="usertel" pattern="[0-9]{4}-[0-9]{6}" placeholder="例如0963656898"
+                    title="例如0963656898">
+                <label for="location">地址</label>
+                <input type="text" name="location" id="location">
+                <label for="educational">學歷</label>
+                <input type="text" name="educational" id="educational">
+            </p>
+            <p>
+                <label for="educational">工作經驗</label><br>
+                <label for="company">公司</label>
+                <input type="text" name="name" id="name">
+                <label type="date">工作時間</label>
+                <input type="number" name="number" id="number"><br>
+                <label for="company">公司</label>
+                <input type="text" name="name" id="name">
+                <label type="date">工作時間</label>
+                <input type="number" name="number" id="number"><br>
+                <label for="company">公司</label>
+                <input type="text" name="name" id="name">
+                <label type="date">工作時間</label>
+                <input type="number" name="number" id="number"><br>
+            </p>
+            <p>
+                <input type="file">
+            </p>
+            <p>
+                <label type="date">填寫日期</label>
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label type="Self introduction">自我介紹</label>
+            </p>
+            <p>
+                <textarea name="textarea" id="Self introduction" cols="50" rows="10" minlength="100"></textarea>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="送出">
+            <input type="reset" value="重設">
+        </p>
+    </form>
+</body>
+
+</html>

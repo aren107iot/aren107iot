@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend><h2>履歷表</h2></legend>
+        <h3>填寫日期</h3>
+        <input type="date" name="date" id="date">
+        
+        <p>
+            <label for="">姓名</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <label for="" >電話</label>
+            <input type="tel" name="phone" id="phone" placeholder="0900-000-000" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required>
+        </p>
+        <p>
+            <label for="">地址</label>
+            <input type="text" name="address" id="address">
+        </p>
+        <p>
+            <!-- checkbox 多選 []陣列 array -->
+            <h3>興趣(多選)</h3>
+            <input type="checkbox" name="love[]" id="read">
+            <label for="read">閱讀</label>
+            <input type="checkbox" name="love[]" id="bike">
+            <label for="bike">自行車</label>
+            <input type="checkbox" name="love[]" id="ball">
+            <label for="ball">打球</label>
+            <input type="checkbox" name="love[]" id="clib">
+            <label for="clib">爬山</label>
+        </p>
+        <h3>最高學歷畢業證書檔案</h3>
+        <input type="file" name="file" id="file">
+        <h3>自傳</h3>
+        <textarea name="textarea" id="textarea" cols="50" rows="5"></textarea>
+        <p>
+            <h3>是否可論班</h3>
+            <input type="radio" name="changeTime" id="yes" value="yes">
+                <label for="yes">yes</label>
+                <input type="radio" name="changeTime" id="no" value="no">
+                <label for="no">no</label>
+        </p>
+        <p>
+            <label for="marriage">婚姻狀態</label>
+            <select name="marriage" id="marriage" >
+                <option value="1">未婚</option>
+                <option value="2">已婚</option>
+                
+            </select>
+        </p>
+        
+        <p>
+            <input type="submit" name="" id="" value="送出">
+           <input type="reset" value="重設">
+       </p>    
+        </fieldset>
+    </form>
+</body>
+</html>

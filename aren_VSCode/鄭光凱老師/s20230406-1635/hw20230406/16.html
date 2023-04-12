@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 10px solid black;
+        }
+
+        /* 網頁框架距離設定為  margin +border+padding+內容*/
+        /* padding 為 內容 內推增加距離 */
+        .box1 {
+            background-color: aqua;
+            padding: 100px;
+        }
+
+        /* margin 為內容+padding+boder 的網頁邊框距離 */
+        .box2 {
+            background-color: blue;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+
+        /* boder 為 內容 +padding 的距離 */
+        .box3 {
+            background-color: chartreuse;
+            box-sizing: border-box;
+            padding: 100px;
+        }
+
+        /* border-box：設定的寬跟高就是整個box的大小 */
+        /* border-box 的 width 包括 padding 和 border */
+        /* content-box : 剛剛設定的寬高是針對內容的，如果有padding跟border大小還會往上 */
+        /* content-box 的 width 不包括 padding 和 border */
+
+
+        .box4 {
+            background-color: chartreuse;
+            box-sizing: box;
+            padding: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1 box">123456789</div>
+    <div class="box2 box">123456789</div>
+    <div class="box3 box">123456789</div>
+    <div class="box4 box">123456789</div>
+
+
+</body>
+
+</html>

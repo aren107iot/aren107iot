@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #mandrin {
+        width: 30px
+    }
+</style>
+
+<body>
+    <h1>form</h1>
+    <!-- table 不可包 table -->
+    <!-- form 不可包 form -->
+    <!-- table 可包 form -->
+    <!-- form 可包 table -->
+
+    <!-- 程式格式化重視可閱讀性 -->
+
+    <!-- input-attr name 表單 傳到 php 會顯示的東西 -->
+    <!-- input-attr id 國小名牌 方便找到他-->
+    <!-- 通常 ID命名與name相同，易管理 -->
+    <!-- input-label for=設定對應ID input -->
+
+    <!-- form-attr action 我要去的網址 -->
+    <!-- form-attr method 我要顯示傳送的狀態 get(無安全性) / post(安全較高) -->
+    <form action="url">
+        <p>
+            <!-- type text 文字 -->
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <!-- type number 數字 -->
+            <label for="mandrin">mandrin</label>
+            <input type="number" name="mandrin" id="mandrin">
+        </p>
+        <p>
+            <label for="english">english</label>
+            <input style="width: 35%;" type="number" name="english" id="english">
+        </p>
+        <!-- type password **** -->
+        <p>
+            <label for="password">password</label>
+            <input type="number" name="password" id="password">
+        </p>
+        <p>
+            <!-- radio 單選送到PHP 只送一個gender name(三個取一樣) -->
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="">male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="">female</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="">other</label>
+        </p>
+        <p>
+            <!-- checkbox 多選[]陣列 array -->
+            <input type="checkbox" name="love[]" id="read">
+            <label for="">read</label>
+            <input type="checkbox" name="love[]" id="bike">
+            <label for="">bike</label>
+            <input type="checkbox" name="love[]" id="ball">
+            <label for="">ball</label>
+            <input type="checkbox" name="love[]" id="ball">
+            <label for="">ball</label>
+            
+        </p>
+
+        <p>
+            <!-- file 上傳檔案 -->
+            <input type="file" name="file" id="file">
+        </p>
+
+        <p>
+            <!-- date 日期 -->
+            <input type="date" name="date" id="date">
+        </p>
+
+        <p>
+            <!-- textarea 多行文字 留言板 -->
+            <textarea name="textarea" id="textarea" cols="30" rows="10">看不到</textarea>
+        
+        </p>
+
+        <p>
+            <!-- select 下拉選單 -->
+            <!-- 1.select 不是input -->
+            <!-- 2.option 內容 -->
+            <!-- 3.html文字 不用跟value相同 -->
+            <label for="phone">phone brand</label>
+            <select name="phone" id="phone">
+                <option value="1">htc</option>
+                <option value="2">apple</option>
+                <option value="3">asus</option>
+            </select>
+            <select name="" id="">
+                <option value=""></option>
+            </select>
+            <select name="" id=""></select>
+sel
+        </p>
+
+        <fieldset>
+            <legend>
+                這是表單欄位群組(fieldset)，legend文字
+            </legend>
+            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="date">
+            <input type="date" name="date" id="date">
+        </fieldset>
+
+        <p>
+            <!-- hidden 隱藏欄位 -->
+            <input type="hidden" name="vip" id="vip" value="good">
+            <!-- reset reset form -->
+            <input type="reset" value="reset">
+            <!-- submit 送出form表單 -->
+            <input type="submit" name="" id="" value="go">
+        </p>
+    </form>
+</body>
+
+</html>

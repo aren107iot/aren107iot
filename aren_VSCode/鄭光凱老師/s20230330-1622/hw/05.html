@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        form{
+            background-color: blanchedalmond;
+        }
+    </style>
+    <form action="url" method="">
+        <fieldset>
+            <legend>職員資料表</legend>
+       
+        <label for="photo">照片</label>
+        <input type="file" name="photo" id="photo">
+        <p>
+           <label for="name">姓名</label>
+           <input type="text" name="name" id="name">
+        </p>
+        <p>
+           <label for="ID">身分證字號</label>
+           <input type="text" name="ID" id="ID">
+        </p>
+        <p>
+           <label for="birth">出生年月日</label>
+           <input type="date" name="birth" id="birth">
+        </p>
+        <p>
+            性別
+           <label for="male">男</label>
+           <input type="radio" name="male" id="male" value="male">
+           <label for="female">女</label>
+           <input type="radio" name="female" id="female" value="female">
+           <label for="other">其他</label>
+           <input type="radio" name="other" id="other" value="other">
+        </p>
+        <p>
+            <label for="address">地址</label>
+            <input type="text" name="address" id="address">
+         </p>
+         <p>
+            <label for="number">連絡電話</label>
+            <input type="number" name="number" id="number">
+         </p>       
+        <hr>
+            <label for="academic background">最高學歷</label>
+        <select name="academic background" id="academic background">
+            <option value="1">博士</option>
+            <option value="2">碩士</option>
+            <option value="3">大學/專科</option>
+            <option value="4">高中職</option>
+            <option value="5">國中</option>
+            <option value="6">國小</option>
+        </select>
+        </p>
+        
+        <p>
+            <label for="school">畢業學校</label>
+            <input type="text" name="school" id="school">
+            <label for="major">科系</label>
+            <input type="text" name="major" id="major">
+            <label for="month-1">入學時間</label>
+            <input type="month" name="month-1" id="month-1">
+            <label for="month-2">畢業時間</label>
+            <input type="month" name="month-2" id="month-2">
+        </p>
+        <hr>
+        <p>
+            電腦技能<br>
+            <input type="checkbox" name="skill" id="word">
+            <label for="word">word</label>
+            <input type="checkbox" name="skill" id="excel">
+            <label for="excel">excel</label>
+            <input type="checkbox" name="skill" id="outlook">
+            <label for="outlook">outlook</label>
+            <input type="checkbox" name="skill" id="photoshop">
+            <label for="photoshop">photoshop</label>
+
+        </p>
+        <p>
+            <label for="">自傳</label><br>
+            <textarea name="textarea" id="textarea" cols="50" rows="5"></textarea>
+        </p>
+        <p>
+            <input type="reset" value="重設"> 
+            <input type="submit" value="提交"> 
+        </p>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

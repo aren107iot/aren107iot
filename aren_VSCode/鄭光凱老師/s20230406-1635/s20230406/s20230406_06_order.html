@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+        }
+
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        td {
+            height: 120px;
+        }
+
+        /* tr:nth-last-child(4) > td , tr:nth-last-child(3) > td{
+            height: 50px;
+        } */
+
+        /* border-radius 圓角 */
+        td>img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .sum>td {
+            color: lightblue;
+        }
+
+        .bonus>td {
+            color: red
+        }
+
+        .big-text {
+            font-size: 24px;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        tr:nth-child(odd)>td {
+            background-color: lightgrey;
+        }
+
+        th {
+            background-color: aquamarine;
+        }
+
+        /* table {
+            border-collapse: collapse;
+            border-radius: 1em;
+            overflow: hidden;
+        } */
+        table{
+            border-radius: 2%;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- &nbsp; 插入空格 -->
+    <h3><img src="./images/logo.png" alt="">&nbsp;&nbsp;&nbsp;歡&nbsp;&nbsp;&nbsp;迎&nbsp;&nbsp;&nbsp;光&nbsp;&nbsp;&nbsp;臨
+    </h3>
+
+    <table>
+        <tr>
+            <th width="10%">序號</th>
+            <th width="10%">品名</th>
+            <th width="15%">照片</th>
+            <th width="10%">數量</th>
+            <th width="10%">單價</th>
+            <th>總價</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>珍奶</td>
+            <td><img src="./images/p1.png" alt=""></td>
+            <td>1</td>
+            <td>100</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>咖啡</td>
+            <td><img src="./images/p2.png" alt=""></td>
+            <td>2</td>
+            <td>50</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>紅色</td>
+            <td><img src="./images/p3.png" alt=""></td>
+            <td>3</td>
+            <td>200</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>花茶</td>
+            <td><img src="./images/p4.png" alt=""></td>
+            <td>1</td>
+            <td>500</td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="sum big-text">
+            <td>總價</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>800</td>
+        </tr>
+        <tr class="bonus big-text">
+            <td>優惠價</td>
+            <td colspan="4">800 * 5</td>
+            <!-- <td></td>
+            <td></td>
+            <td></td> -->
+            <td>640</td>
+        </tr>
+    </table>
+</body>
+
+</html>

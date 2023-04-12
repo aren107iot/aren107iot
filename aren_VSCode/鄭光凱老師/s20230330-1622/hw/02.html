@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>人事部</h1>
+    <form action="url" method="">
+        <fieldset>
+            <legend>個人資料</legend>
+            <label for="name">姓名</label>
+            <input type="text" name="name" id="name">
+            <p>
+                <label for="gender">性別</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">女</label>
+            </p>
+            <P>
+                <label for="birthday">生日</label>
+                <input type="date" name="date" id="date">
+            </P>
+            <P>
+                <label for="idnumber">身分證字號</label>
+                <input type="text" name="idnumber" id="idnumber">
+            </P>
+
+            <P> <label for="tel">電話</label>
+                <input type="tel" name="tel" id="tel">
+            </P>
+            <P> <label for="email">電子郵件</label>
+                <input type="email" name="email" id="email">
+            </P>
+            <p>
+                <label for="address">地址</label>
+                <input type="text" name="address" id="address">
+            </p>
+            </P>
+            <label for="education">學歷</label>
+            <select name="education" id="education">
+                <option value="1">學士</option>
+                <option value="2">碩士</option>
+                <option value="3">博士</option>
+            </select>
+            <p>
+
+            <P>自傳<br>
+                <textarea name="textarea" id="textarea" cols="50" rows="5"></Textarea>
+            </P>
+            <P>
+                上傳照片
+                <input type="file" name="file" id="file">
+            </P>
+        </fieldset>
+        <Fieldset>
+            <legend>內部經歷</legend>
+            <P>
+                <label for="duedate">入職日</label>
+                <input type="date" name="date" id="date">
+            </P>
+            <Label for="jobtitle">職稱</Label>
+            <input type="text" name="jobtitle" id="jobtitle">
+            <p>
+            <P>
+                <label for="habby">社團</label>
+                <input type="checkbox" name="love[]" id="hike">
+                <label for="hike">登山</label>
+                <input type="checkbox" name="love[]" id="bike">
+                <label for="bike">自行車</label>
+                <input type="checkbox" name="love[]" id="ball">
+                <label for="ball">打球</label>
+            </P>
+        </Fieldset>
+    </Form>
+</body>
+
+</html>

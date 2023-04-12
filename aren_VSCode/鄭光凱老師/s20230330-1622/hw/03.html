@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .personalData{
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- table跟form不能再包同樣東西 -->
+    <!-- table可以包form -->
+    <!-- form可以包table -->
+    <!-- input-attr name 表單 傳到php會顯示的東西 -->
+    <!-- input-attr id 國小名牌 方便找到 -->
+    <!-- input-attr id name 不同的 但都會取同名 -->
+    <!-- for 我跟誰有關 id 點label可以自動移到input text -->
+    <!-- attr action 我要去的網址 xxx.php -->
+    <!-- atte method 我要顯示傳送的狀態 get 安全性低 透明盒子包裹
+    post 安全性高 黑色盒子包裹 -->
+    <!-- inpur -->
+    <form action="url" method="">
+        <fieldset class="personalData">
+            <legend>個人資料</legend>
+            <p><label for="name">姓名</label>
+                <input type="text" name="name" id="name">
+            </p>
+            <!--p><label for="chinese">國文</label>
+                <input type="text" name="chinese" id="chinese">
+            </p>
+            <p><label for="english">英文</label>
+                <input type="text" name="english" id="english">
+            </p>
+            <p><label for="math">數學</label>
+                <input type="text" name="math" id="math">
+            </p-->
+            <p>
+                <label>性別</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">中性</label>
+            </p>
+            <p>
+                <label>興趣</label>
+                <!-- checkbox 多選 []陣列 -->
+                <input type="checkbox" name="love[]" id="read">
+                <label for="read">閱讀</label>
+                <input type="checkbox" name="love[]" id="bike">
+                <label for="bike">自行車</label>
+                <input type="checkbox" name="love[]" id="ball">
+                <label for="ball">打球</label>
+            </p>
+            <p>
+                <label for="file">照片</label>
+                <!-- file 上傳檔案 -->
+                <input type="file" name="file" id="file">
+            </p>
+            <p>
+                <label for="date">生日</label>
+                <!-- date 日期 -->
+                <input type="date" name="date" id="date">
+            </p>
+            <p>
+                <label for="textarea">備註</label>
+                <!-- textarea 多行文字 留言板 -->
+                <textarea name="textarea" id="textarea" cols="50" rows="5" style="resize:none">
+
+                </textarea>
+            </p>
+            <p>
+                <!-- select 下拉選單 -->
+                <!-- 1.select 不是input -->
+                <!-- 2.option 內容 -->
+                <!-- 3.html文字 不用跟value相同 -->
+                <!-- 後端實際收到 phone=>value -->
+                <!-- phone => 1 -->
+                <label for="phone">使用手機品牌</label>
+                <select name="phone" id="phone">
+                    <option value="htc">HTC</option>
+                    <option value="apple">APPLE</option>
+                    <option value="asus">asus</option>
+                </select>
+            </p>
+        </fieldset>
+
+        <p>
+            <!-- hidden 隱藏欄位 -->
+            <input type="hidden" name="vip" id="vip" value="good">
+            <!-- submit 送出form表單 -->
+            <input type="submit" name="" id="" value="送出">
+            <!-- reset 重設表單 -->
+            <input type="reset" value="重設">
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 90%;
+            margin: auto;
+
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #f00;
+            text-align: center;
+            /* margin: auto; */
+            border-collapse: collapse;
+            /* width:auto; */
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        .NT::before {
+            content: 'NT';
+        }
+
+        .NT::after {
+            content: '元';
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffe;
+        }
+
+        .secondLastTr {
+            color: #aaf;
+        }
+
+        .lastTr {
+            color: #f00;
+        }
+
+        td > img{
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>器材報價</h4>
+    <table>
+        <tr>
+            <th>序號</th>
+            <th>品項</th>
+            <th>照片</th>
+            <th>數量</th>
+            <th>單價</th>
+            <th>總價</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>桌子</td>
+            <td><img src="https://picsum.photos/id/9/100" alt="roading.."></a></td>
+            <td>2</td>
+            <td class="NT">100</td>
+            <td class="NT">200</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>椅子</td>
+            <td><img src="https://picsum.photos/id/29/100" alt="roading.."></td>
+            <td>2</td>
+            <td class="NT">50</td>
+            <td class="NT">100</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>螢幕</td>
+            <td><img src="https://picsum.photos/id/49/100" alt="roading.."></td>
+            <td>4</td>
+            <td class="NT">300</td>
+            <td class="NT">1200</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>電腦</td>
+            <td><img src="https://picsum.photos/id/69/100" alt="roading.."></td>
+            <td>2</td>
+            <td class="NT">400</td>
+            <td class="NT">800</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="secondLastTr">
+            <td>總價</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="NT">2300</td>
+        </tr>
+        <tr class="lastTr">
+            <td>優惠價</td>
+            <td colspan="4"></td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td class="NT">2000</td>
+        </tr>
+    </table>
+</body>
+
+</html>

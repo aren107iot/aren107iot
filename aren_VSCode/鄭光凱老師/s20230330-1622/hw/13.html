@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_Form</title>
+    <style>
+        /* #add {
+            width: 500px;
+
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <h3>員工個人資料</h3>
+
+    <form action="url()" target="_blank" method="">
+        <fieldset>
+            <legend>HR</legend>
+
+            <p>
+
+                <label for="name">姓名</label>
+                <br>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+
+                <label for="apart">部門</label>
+                <br>
+                <input type="text" name="apart" id="apart">
+            </p>
+            <p>
+
+                <label for="title">職稱</label>
+                <br>
+                <input type="text" name="title" id="title">
+            </p>
+            <p>
+
+                <label for="phoneN">連絡電話</label>
+                <br>
+                <input type="number" name="phoneN" id="phoneN">
+            </p>
+            <p>
+
+                <label for="add">通訊地址</label>
+                <br>
+                <textarea name="add" id="add" cols="50" rows="2">
+                </textarea>
+            </p>
+
+            <p>
+
+                <label for="">性別</label>
+                <br>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">其他</label>
+            </p>
+            <p>
+
+                <label for="birdate">生日</label>
+                <br>
+                <input type="date" name="birdate" id="birdate">
+            </p>
+            <p>
+
+                <label for="">到職日期</label>
+                <br>
+                <input type="date" name="workdate" id="workdate">
+            </p>
+            <p>
+
+                <label for="">繳交資料</label>
+                <br>
+                <input type="checkbox" name="Pdata[]" id="contract">
+                <label for="contract">契約書</label>
+                <input type="checkbox" name="Pdata[]" id="IDcopy">
+                <label for="IDcopy">身分證件影本</label>
+                <input type="checkbox" name="Pdata[]" id="PBcopy">
+                <label for="PBcopy">存摺影本</label>
+                <input type="checkbox" name="etc" id="etc">
+                <label for="etc">其他</label>
+            </p>
+            <p>
+
+                <label for="file">上傳資料影本</label>
+                <br>
+                <input type="file" name="file" id="file" value="檔案">
+            </p>
+
+
+
+            <p>
+
+
+                <label for="traffic">通勤方式</label>
+                <br>
+                <select name="traffic" id="traffic">
+                    <option value="1">大眾運輸系統</option>
+                    <option value="2">自行駕駛</option>
+                    <option value="3">住宿</option>
+                    <option value="4">其他</option>
+                </select>
+
+            </p>
+
+            <p>
+
+                <label for="textarea">備註</label>
+                <br>
+                <textarea name="textarea" id="textarea" cols="50" rows="3">
+
+            </textarea>
+
+            </p>
+        </fieldset>
+
+        <hr>
+        <p>
+
+            <input type="hidden" name="vip" id="vip" value="good">
+
+
+            <input type="submit" name="" id="" value="送出">
+
+            <input type="reset" value="重設">
+        </p>
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

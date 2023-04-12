@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* border: 1px solid black; */
+            /* width: 1024px; */
+            /* vw vh viewpoint */
+            width: 100%;
+            height: 50vh;
+            justify-content: center;
+            /* margin auto + no width 不能flexbox  使用 */
+            /* justify-content center 置中 */
+            margin: auto;
+
+            /* 
+                固定板型 置中
+                width: 1024 非rwd 
+                auto 使用 margin 
+            */
+            /* 
+                rwd版型 沒有width
+                置中
+                margin auto 失效
+                justify-content: 置中
+            */
+
+
+        }
+
+        .item {}
+
+        .item1 {
+            background-color: lightpink;
+            flex-basis: 20%;
+        }
+
+        .item2 {
+            background-color: lightblue;
+            /* calc 計算 數字 - 數字 減號與數字要空格分開 */
+            flex-basis: calc(100% - 20%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container div-center">
+        <div class="item item1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab eum consequuntur totam laudantium doloremque
+            facilis corrupti vitae, a culpa, facere ullam, explicabo eveniet odit provident beatae voluptas quisquam
+            libero. Quo impedit hic, nihil assumenda aspernatur ea blanditiis nisi unde, quidem voluptatum autem, maxime
+            odio. Eum similique repellendus doloremque harum libero necessitatibus aut a in? Nesciunt sequi tenetur
+            incidunt quam distinctio qui nostrum, fuga praesentium dolorum mollitia, iure molestias pariatur
+            consequuntur repellendus cupiditate minima, autem minus ex perspiciatis culpa? Molestiae officia sequi
+            magnam omnis, nihil expedita possimus voluptatem soluta, laudantium tenetur saepe corrupti! Ipsa sapiente
+            soluta nemo, numquam voluptas animi sed velit. Animi placeat necessitatibus blanditiis tempora, expedita
+            distinctio aut quas nemo, et ducimus voluptatum facilis! Hic labore velit totam veritatis tenetur omnis
+            quasi, sapiente eius, ipsam esse porro est aliquam amet consectetur? Natus rerum quo, qui laudantium minima
+            laboriosam distinctio nulla corrupti velit dolores, magni quaerat error cupiditate delectus, quis quas quae
+            eveniet. Reprehenderit, quod! Atque nisi quod placeat, facere illum doloribus nobis! Ad, consequuntur ipsum.
+            Necessitatibus minima, ullam perferendis beatae molestias doloremque at neque enim accusantium maxime
+            praesentium, omnis, quisquam facere tempora blanditiis harum vel sequi cupiditate distinctio? Modi, dolores
+            repudiandae sequi ipsum non facilis pariatur eum placeat iste, odit eligendi optio, repellat cumque laborum
+            eius et incidunt sit similique quod quasi dolorum numquam. Neque blanditiis dicta alias dolores nemo
+            provident doloremque ipsa hic iste odio minus sunt, saepe cumque placeat commodi perferendis excepturi animi
+            id, amet nisi eum nulla laudantium. Labore quia ex odio itaque delectus aliquam officiis suscipit
+            repudiandae dolore perspiciatis tempore modi consectetur nesciunt quis iste vero ipsam non, culpa possimus
+            quod, adipisci, nisi aliquid? Ut a ipsum, molestias saepe ipsa nisi! Error fugit eum, laudantium, voluptas
+            inventore quam, saepe omnis ex ad facilis earum? Dolorum eos quisquam eius fugit quia alias in repellendus
+            esse exercitationem!
+        </div>
+        <div class="item item2">
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+        <h1>泰山職訓中心簡易學員資料表</h1>
+
+        <form action="">
+            <fieldset>
+                <legend>個人基本資料</legend>
+                <p>
+                    <label for="CNname">姓名</label>
+                    <input type="text" name="CNname" id="CNname">
+                    <blockquote></blockquote>
+                        <label for="gender">性別：</label>
+                        <label for="gender">男</label>
+                        <input type="radio" name="gender" id="gender" value="男性">
+                        <label for="gender">女</label>
+                        <input type="radio" name="gender" id="gender" value="女性">
+                        <label for="gender">其他</label>
+                        <input type="radio" name="gender" id="gender" value="其他">
+                    </blockquote>
+                </p>
+
+                <p>
+                    <label for="ID">身分證字號</label>
+                    <input type="text" name="ID" id="ID">
+                    <label for="BirthDay">出生年月日</label>
+                    <input type="date" name="BirthDay" id="BirthDay">                 
+                </p>
+                <p>
+                    <label for="phone">聯絡電話</label>
+                    <input type="number" name="phone" id="phone">
+                    <label for="mobile">手機電話</label>
+                    <input type="number" name="mobile" id="mobile">
+                </p>              
+                <p>
+                    <label for="address">通訊地址</label>
+                    <input type="text" name="address" id="address" size="100">
+                </p>
+
+                <p>
+                    <label for="phone">請上傳照片</label>
+                    <input type="file">
+                </p>
+            </fieldset>
+                
+            
+        <br>
+        <fieldset>
+            <legend>學習經歷</legend>
+            <p>
+                <label for="">學習過的程式語言</label>
+                <input type="checkbox" name="coding[]" id="PHP">
+                <label for="">PHP</label>
+                <input type="checkbox" name="coding[]" id="Python">
+                <label for="">Python</label>
+                <input type="checkbox" name="coding[]" id="Java">
+                <label for="">Java</label>
+            </p>
+            <p>
+                <label for="">學習過的資料庫</label>
+                <input type="checkbox" name="coding[]" id="MySQL">
+                <label for="">MySQL</label>
+                <input type="checkbox" name="coding[]" id="MariaDB">
+                <label for="">MariaDB</label>
+                <input type="checkbox" name="coding[]" id="MongoDB">
+                <label for="">MongoDB</label>
+            </p>
+            
+        </fieldset>
+
+            <p>
+                <input type="reset" name="" id="" value="重設">
+                <input type="submit" name="" id="" value="送出">
+            </p>
+        </form>
+    
+       
+</body>
+
+</html>

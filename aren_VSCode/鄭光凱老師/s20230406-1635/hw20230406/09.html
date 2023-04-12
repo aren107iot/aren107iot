@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            border: 10px solid black;
+            width: 500px;
+            height: 500px;
+        }
+        .p1 {
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            margin-right: 5px;
+        }
+        .p2 {
+            box-sizing: border-box;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+            margin-right: 5px;
+        }
+        .p3 {
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-bottom: 50px;
+            padding-right: 5px;
+        }
+        .p4 {
+            box-sizing: border-box;
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-bottom: 50px;
+            padding-right: 5px;
+        }
+    </style>
+    <!-- margin 是在BOX設定邊界滿版
+     padding 是在BOX裡面與四周邊界留白 
+     box-sizing 原本設定content-box，
+     這種狀況下如果設定長寬300px
+     會再加上邊框20px變成320px
+     如果改成border-box
+     這樣就是長寬+邊框等於300px
+    (邊框20px已經包含在裡面了) -->
+</head>
+
+<body>
+    <H1>Margin:Content Box</H1>
+    <p class="p1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit adipisci id accusamus odit accusantium
+        nulla voluptatem, aperiam, quod doloribus aut saepe ipsam omnis inventore libero totam tenetur obcaecati
+        recusandae unde suscipit eos odio nam aspernatur est. Voluptate earum in, iste beatae voluptates sit aliquam
+        explicabo architecto atque maiores. Nihil incidunt fugiat eveniet quasi amet porro velit libero saepe corrupti
+        iste quo, possimus eligendi, pariatur voluptate atque impedit nostrum, ad molestias. Obcaecati dolor cupiditate,
+        maxime sed nisi veniam adipisci autem ratione pariatur accusantium asperiores! Corrupti impedit dignissimos
+        harum. Praesentium aliquid similique, libero perspiciatis enim veritatis itaque consequatur! Amet impedit
+        quibusdam ex est, nemo asperiores consequatur corporis doloremque, iure laboriosam temporibus aut voluptatem
+        recusandae officiis id sint! Expedita dolorum eligendi porro voluptatibus esse? Distinctio culpa quisquam
+        corrupti minus repellendus officia debitis, dolore pariatur sed reprehenderit. Consequuntur hic ad minima, illum
+        reprehenderit nobis distinctio error vero facilis incidunt fugit beatae sint quam vitae nam! Dignissimos eaque
+    </p>
+    <H1>Margin:Border box</H2>
+    <p class="p2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit adipisci id accusamus odit accusantium
+        nulla voluptatem, aperiam, quod doloribus aut saepe ipsam omnis inventore libero totam tenetur obcaecati
+        recusandae unde suscipit eos odio nam aspernatur est. Voluptate earum in, iste beatae voluptates sit aliquam
+        explicabo architecto atque maiores. Nihil incidunt fugiat eveniet quasi amet porro velit libero saepe corrupti
+        iste quo, possimus eligendi, pariatur voluptate atque impedit nostrum, ad molestias. Obcaecati dolor cupiditate,
+        maxime sed nisi veniam adipisci autem ratione pariatur accusantium asperiores! Corrupti impedit dignissimos
+        harum. Praesentium aliquid similique, libero perspiciatis enim veritatis itaque consequatur! Amet impedit
+        quibusdam ex est, nemo asperiores consequatur corporis doloremque, iure laboriosam temporibus aut voluptatem
+        recusandae officiis id sint! Expedita dolorum eligendi porro voluptatibus esse? Distinctio culpa quisquam
+        corrupti minus repellendus officia debitis, dolore pariatur sed reprehenderit. Consequuntur hic ad minima, illum
+        reprehenderit nobis distinctio error vero facilis incidunt fugit beatae sint quam vitae nam! Dignissimos eaque
+    </p>
+    <H1>Padding:Content box</H3>
+    <p class="p3">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit adipisci id accusamus odit accusantium
+        nulla voluptatem, aperiam, quod doloribus aut saepe ipsam omnis inventore libero totam tenetur obcaecati
+        recusandae unde suscipit eos odio nam aspernatur est. Voluptate earum in, iste beatae voluptates sit aliquam
+        explicabo architecto atque maiores. Nihil incidunt fugiat eveniet quasi amet porro velit libero saepe corrupti
+        iste quo, possimus eligendi, pariatur voluptate atque impedit nostrum, ad molestias. Obcaecati dolor cupiditate,
+        maxime sed nisi veniam adipisci autem ratione pariatur accusantium asperiores! Corrupti impedit dignissimos
+        harum. Praesentium aliquid similique, libero perspiciatis enim veritatis itaque consequatur! Amet impedit
+        quibusdam ex est, nemo asperiores consequatur corporis doloremque, iure laboriosam temporibus aut voluptatem
+        recusandae officiis id sint! Expedita dolorum eligendi porro voluptatibus esse? Distinctio culpa quisquam
+        corrupti minus repellendus officia debitis, dolore pariatur sed reprehenderit. Consequuntur hic ad minima, illum
+        reprehenderit nobis distinctio error vero facilis incidunt fugit beatae sint quam vitae nam! Dignissimos eaque
+    </p>
+    <H1>Padding:Border box</H4>
+    <p class="p4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit adipisci id accusamus odit accusantium
+        nulla voluptatem, aperiam, quod doloribus aut saepe ipsam omnis inventore libero totam tenetur obcaecati
+        recusandae unde suscipit eos odio nam aspernatur est. Voluptate earum in, iste beatae voluptates sit aliquam
+        explicabo architecto atque maiores. Nihil incidunt fugiat eveniet quasi amet porro velit libero saepe corrupti
+        iste quo, possimus eligendi, pariatur voluptate atque impedit nostrum, ad molestias. Obcaecati dolor cupiditate,
+        maxime sed nisi veniam adipisci autem ratione pariatur accusantium asperiores! Corrupti impedit dignissimos
+        harum. Praesentium aliquid similique, libero perspiciatis enim veritatis itaque consequatur! Amet impedit
+        quibusdam ex est, nemo asperiores consequatur corporis doloremque, iure laboriosam temporibus aut voluptatem
+        recusandae officiis id sint! Expedita dolorum eligendi porro voluptatibus esse? Distinctio culpa quisquam
+        corrupti minus repellendus officia debitis, dolore pariatur sed reprehenderit. Consequuntur hic ad minima, illum
+        reprehenderit nobis distinctio error vero facilis incidunt fugit beatae sint quam vitae nam! Dignissimos eaque
+    </p>
+</body>
+
+</html>

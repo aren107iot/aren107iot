@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* input{
+            background-color: antiquewhite;
+        } */
+
+        /* Attribute */
+        /* input[type='number']{
+            background-color: red;
+        } */
+
+        /* input[type='text']{
+            background-color: blue;
+        } */
+
+        /* not 反向選擇 */
+        /* :not(選擇器) */
+        /*  */
+        input[type='text']{
+            background-color: blue;
+        }
+
+        input:not([type='text']){
+            background-color: red;
+        }
+
+        .test2{
+            color:red;
+        }
+
+        .myDiv>p:not(.test2){
+            color:green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <p>
+            <label for="name">name</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <p>
+            <label for="age">age</label>
+            <input type="number" name="age" id="age">
+        </p>
+        <p>
+            <label for="name2">name2</label>
+            <input type="text" name="name2" id="name2">
+        </p>
+
+        <p>
+            <label for="age2">age2</label>
+            <input type="number" name="age2" id="age2">
+        </p>
+
+    </form>
+
+    <div class="myDiv">
+        <p class="test1">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test2">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test2">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test2">
+            Lorem ipsum dolor sit amet.
+        </p>
+        <p class="test2">
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+</body>
+</html>

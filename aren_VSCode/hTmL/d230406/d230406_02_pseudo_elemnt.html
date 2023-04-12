@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p::first-line{
+        color:#ff0000
+    }
+    p::first-letter{
+        color: #00ff00;
+    font-size: 45px;
+    }
+    p::after{
+content: 'good';
+color: #00f;
+    }
+    p::before{
+        content: 'this\'s before content';
+    }
+    .hahaha::after{
+        content: 'this\'s after content';
+    }
+</style>
+</head>
+
+<body>
+    <!-- pseudo-elements -->
+    <p >
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque a odit eum beatae numquam atque laborum
+        aperiam rerum odio velit quas voluptatem modi debitis molestiae, inventore maxime, expedita quae iste dicta
+        reprehenderit officia id saepe alias aut. Aperiam quisquam sunt voluptatem sapiente optio? Corporis neque illum,
+        eveniet, magnam eum maiores quas asperiores numquam, animi facilis iure. Tempore, consectetur vero. Repellendus
+        ab velit distinctio aliquam vero, consequuntur dolores optio placeat, fuga nemo ut similique. Esse doloremque
+        harum vel voluptate. Non a rem facere quasi odit voluptatem labore quo obcaecati eos sunt placeat cupiditate
+        incidunt iure, necessitatibus atque est eius quae culpa!
+    </p>
+    <p class="hahaha">123</p>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonData</title>
+</head>
+
+<style>
+    #address {
+        width: 350px;
+    }
+
+    #name {
+        width: 90px;
+    }
+
+    #picutre {
+        width: 50px;
+    }
+
+    table {
+        margin: auto;
+    }
+
+    fieldset {
+        width: 900px;
+    }
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1><b>個人資料履歷</b></h1>
+    <form action="">
+        <fieldset>
+            <legend>請確實輸入避免影響個人權益</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">姓名</label>
+                    </td>
+                    <td>
+                        <input type="text" name="name" id="name">
+                    </td>
+                    <td rowspan="3" bgcolor="yellow" id="picture" >
+                        照片<br>黏貼處
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ID">身分證字號</label>
+                    </td>
+                    <td>
+                        <input type="text" name="ID" id="ID">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">性別</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="femlae">
+                        <label for="male">男</label>
+                        <input type="radio" name="gender" id="female" value="femlae">
+                        <label for="femlae">女</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">其他</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="birth">出生日期</label>
+                    </td>
+                    <td>
+                        <input type="date" name="birth" id="birth">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">手機</label>
+                    </td>
+                    <td>
+                        <label for="phone1">廠牌</label>
+                        <select name="phone1" id="phone1">
+                            <option value="1">HTC</option>
+                            <option value="2">SONY</option>
+                            <option value="3">APPLE</option>
+                        </select>
+                        <label for="phone2">型號</label>
+                        <select name="phone2" id="phone2">
+                            <option value="1">999</option>
+                            <option value="2">5IV</option>
+                            <option value="3">13PRO</option>
+                        </select><br>
+                        <label for="number">電話</label>
+                        <input type="number" name="number" id="number">
+                    </td>
+                    <td>
+                        <input type="file" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">地址</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="school1">畢業學校及科系</label>
+                    </td>
+                    <td>
+                        <input type="text" name="school1" id="school1">
+                        <input type="text" name="school2" id="school2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="textarea">工作經歷</label>
+                    </td>
+                    <td>
+                        <textarea name="textarea" id="textarea" cols="46" rows="5"></textarea>
+                    </td>
+                </tr>
+                
+            </table>
+        </fieldset>
+    </form>
+    <input type="reset" name="" id="" value="重設">
+    <input type="submit" name="" id="" value="送出">
+</body>
+
+</html>

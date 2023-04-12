@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ....*宣告全部 */
+        .p1 {
+            /* box-sizing: content-box; */
+            /* 這條指令最重要 */
+            box-sizing: border-box;
+        }
+
+        .p2 {
+            box-sizing: content-box;
+        }
+
+        /* margin
+                 bodrer
+                        padding
+                               content
+                               
+                               */
+        div {
+            float: left;
+            margin: 0px;
+
+        }
+
+        p {
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+
+        }
+
+        .p2 {
+            /* margin: 20px; */
+            /* margin-top: 20px;
+            margin-left: 100px; */
+            /* auto左右才有 */
+            margin-left: 0px;
+            padding: 100px;
+        }
+
+        .p1 {
+            /* padding-top: 20px;
+            padding-right: 5px;
+            padding-bottom: 100px;
+            padding-left: 50px; */
+            margin: 100px;
+            padding: 0px;
+        }
+
+        /* 兩者擇一 兩種置中 margin auto沒用就使用 text- aligh*/
+
+
+
+        pre {
+            color: red;
+            font-size: 20px;
+        }
+
+        /* .ima {
+            
+            margin-top: 200px;
+            margin-left: 100px;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p class="p1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius incidunt molestiae fugiat suscipit hic fuga
+            quos
+            quo cum delectus. Cum esse omnis voluptate sit tenetur facilis commodi nemo labore totam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus iure minima beatae quas cupiditate quod
+
+            omnis doloremque? Possimus earum adipisci iste nam iure distinctio alias voluptates eos dicta repellendus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem quos quam et at accusantium
+            temporibus sunt repellat, amet debitis voluptatem repellendus, odit iste optio. Repellendus cum nostrum
+            animi quae.
+        </p>
+
+
+        <pre>
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        
+        
+        margin: 100px;(往外推)
+        padding: 0px; (往內推)
+
+        box-sizing: border-box;
+        *可維持區塊尺寸為300xp*300px
+
+
+    </pre>
+    </div>
+    <div>
+        <p class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius incidunt molestiae fugiat suscipit hic fuga
+            quos
+            quo cum delectus. Cum esse omnis voluptate sit tenetur facilis commodi nemo labore totam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus iure minima beatae quas cupiditate quod
+
+            omnis doloremque? Possimus earum adipisci iste nam iure distinctio alias voluptates eos dicta repellendus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, rem quos quam et at accusantium
+            temporibus sunt repellat, amet debitis voluptatem repellendus, odit iste optio. Repellendus cum nostrum
+            animi quae.
+        </p>
+        <pre>
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+
+
+        margin: 0px;   (往外推)
+        padding: 100px;(往內推)
+
+        box-sizing: content-box;
+        *會受到margin,padding影響區塊尺寸
+        
+    </div>
+    <div class="ima">
+        <!-- <img  src="./image/box-sizing.png" alt="">
+        
+        <pre>
+            margin-top: 200px;
+            margin-left:100px;
+        </pre> -->
+    </div>
+</body>
+
+</html>

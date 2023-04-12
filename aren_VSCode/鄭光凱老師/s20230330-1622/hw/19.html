@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #chinese{width: 500px;}
+    </style>
+</head>
+<body>
+    
+    <form action="">
+        <fieldset>
+            <legend>基本資料</legend>
+    <p>
+        <label for="name">姓名</label>
+        <input type="text" name="name" id="name">    
+    <p>
+        <label for="chinese">住址</label>
+        <input type="text" name="chinese" id="chinese">
+    </p>
+    <p>
+        <label for="phone">電話</label>
+        <input type="text" name="phone" id="phone">
+    </p>
+    <p>
+        <label for="age">年齡</label>
+        <input type="text" name="age" id="age">
+    </p>
+    <p>
+        <label for="english">員工代號</label>
+        <input type="password" name="english" id="english">
+    </p>
+    <p>
+        <label for="math">性別</label> <br>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="math">男</label>
+        <br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="math">女</label>
+        <br>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="math">其他</label>
+    </p>
+    <p>
+        <label for="math">是否有以下駕照</label> <br>
+        <input type="checkbox" name="love[]" id="">  
+        <label for="read">機車</label>      <br>
+        <input type="checkbox" name="love[]" id="">
+        <label for="read">汽車</label>      <br>
+        <input type="checkbox" name="love[]" id=""> 
+        <label for="read">大型貨車</label>      
+    </p>
+        <p>
+        <input type="hidden" name="vip">
+        <label for="math">個人大頭照</label>
+        <input type="file">
+        </p>
+    <p>
+        <label for="math">年資</label>
+        <select name="color" id="">
+          <option value="red">1</option>
+          <option value="blue">2~5</option>
+          <option value="yellow">5以上</option>
+        </select>  
+
+    </p>    
+    <p>
+        <label for="talkbox">其他意見</label> <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </p>
+
+    <hr>
+    <p>
+        <input type="reset" value="重設">
+    </p>
+    <p>
+        <input type="submit">
+    </p>
+    </fieldset>
+    </form>
+</body>
+</html>

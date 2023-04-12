@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #phone,
+        #name,
+        #idcard,
+        #email,
+        #date,
+        #drink {
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>人事基本資料</h1>
+    <form action="">
+        <fieldset>
+            <legend><b>新進員工基本資料</b></legend>
+            <p>
+                <label for="name">*姓名</label><br>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <label for="idcard">*身分證字號</label><br>
+                <input type="text" name="idcard" id="idcard">
+            </p>
+            <p>
+                <label for="phone">手機號碼</label><br>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{6}" placeholder="例如0987-654321"
+                    title="例如0987-654321">
+
+            </p>
+            <p>
+                <label for="email">E-mail</label><br>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="date">出生日期</label><br>
+                <input type="date" name="date" id="date">
+            </p>
+            <hr>
+            <p>
+                <legend>性別</legend><br>
+                <label for="male">男</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female">女</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="other">其他</label>
+                <input type="radio" name="gender" id="other" value="other">
+            </p>
+            <hr>
+            <p>
+                <label for="">喜歡的食物</label><br><br>
+                <label for="rise">飯</label>
+                <input type="checkbox" name="food" id="rise">
+                <label for="noodle">麵</label>
+                <input type="checkbox" name="food" id="noodle">
+                <label for="riseNoodle">冬粉</label>
+                <input type="checkbox" name="food" id="riseNoodle">
+
+            </p>
+            <hr>
+            <p>
+                <label for="drink">喜歡的飲料</label>
+                <br>
+                <br>
+                <select name="drink" id="drink" >
+                    <option value="kebuke">可不可</option>
+                    <option value="50blue">50嵐</option>
+                    <option value="woo">梧桐號</option>
+                </select>
+            </p>
+            <hr>
+            <P>
+                <textarea name="box" id="box" cols="90" rows="10">備註</textarea>
+            </P>
+            <p>
+                <input type="reset" value="重填">
+                <input type="submit" value="完成">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

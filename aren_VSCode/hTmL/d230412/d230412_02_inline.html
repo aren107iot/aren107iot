@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block vs inline</title>
+    <style>
+        /* 轉型 */
+        div {
+            /* display:inline; */
+            height: 100px;
+        }
+
+        span {
+            /* display: block; */
+            height: 100px;
+        }
+
+        .nav {
+            background-color: beige;
+        }
+
+        .nav>li {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 區塊元素 -->
+    <!-- 會換行 -->
+    <!-- 高度可調整 -->
+    <!-- div -->
+    <div>
+        block
+    </div>
+    <div>
+        block
+    </div>
+
+    <!-- 行內元素 -->
+    <!-- 不會換行 -->
+    <!-- 高度不可調整 -->
+    <!-- span -->
+    <span>
+        inline
+    </span>
+    <span>
+        inline
+    </span>
+
+
+    <!-- <inline-box> -->
+    <!-- 不會換行 -->
+    <!-- 可調高度 -->
+    <ul class="nav">
+        <li><a href="">test1</a></li>
+        <li><a href="">test1</a></li>
+        <li><a href="">test1</a></li>
+    </ul>
+
+</body>
+
+</html>

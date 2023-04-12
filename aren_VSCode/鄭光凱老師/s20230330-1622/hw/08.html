@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action=".\handler">
+        <fieldset>
+            <legend>員工資料表               
+            </legend>
+            <p>
+                <label for="name">員工姓名</label>
+                <input type="text" name="name" id="name">
+                <label for="sex">姓別:</label>
+                <input type="checkbox" name="man" id="man">
+                <label for="man">男</label>
+                <input type="checkbox" name="female" id="female">
+                <label for="female">女</label>
+            </p>
+            <p>
+                <label for="password">密碼設定</label>
+                <input type="password" name="password" id="password">
+            </p>
+            <p>
+                <label for="addr1">地址&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" name="addr1" id="addr1">
+            </p>       
+            <p>
+                <label for="email">電子郵件</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <label for="phone">電話&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="tel" name="phone" id="phone" >
+                <label for="telphone">手機</label>
+                <input type="tel" name="telphone" id="telphone" maxlength="11" minlength="11" placeholder="範例:0911-111111" title="例如:0911-111111">
+            </p>
+            <p>
+                <label for="study">學歷</label>
+                <select name="study">
+                    <option value="highschool" selected>高中</option>
+                    <option value="universty">大學</option>
+                    <option value="master">碩士</option>
+                    <option value="doctoral">博士</option>
+                </select>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="prof">專業技能:</label>
+                <input type="checkbox" name="computer" id="computer">
+                <label for="computer">電腦</label>
+                <input type="checkbox" name="math" id="math">
+                <label for="math">數學</label>
+                <input type="checkbox" name="enginner" id="enginner">
+                <label for="enginner">工程類</label>
+                <input type="checkbox" name="homepage" id="homepage">
+                <label for="homepage">網頁設計</label>
+            </p>
+                <label for="memo">備註</label>
+                <textarea name="memo" cols="30" rows="5">
+
+                </textarea>
+            <p>
+                <label for="upload_Photo">上傳相片</label>
+                <input type="file" name="upload_Photo" id="upload_Photo">
+            </p>
+            </p>
+                <input type="reset" value="清除">
+                <input type="submit" value="送出">
+
+        </fieldset>
+    </form>
+</body>
+</html>

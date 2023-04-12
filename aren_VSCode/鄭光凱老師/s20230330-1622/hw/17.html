@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: #73f; text-align: center;">新進人員資料表</h1>
+    <!-- table和form不能再包 -->
+    <!-- attr name 表單；傳到PHP會顯示的東西 -->
+    <form action="url">
+        <fieldset>
+            <legend>員工個人資料</legend>
+            </p>
+                <label for="">&nbsp部門：</label>
+                <input type="number" name="" id="">
+            <p>
+            <p>
+                <label for="">&nbsp姓名：</label>
+                <input type="text" name="" id="">
+            </p>
+            <p>
+                <label for="">&nbsp &nbsp&nbsp ID：</label>
+                <input type="number" name="" id="">
+            </p>
+            <p>
+                <label for="">&nbsp電話：</label>
+                <input type="number" name="" id="">
+            </p>
+            <p>
+                <label for="">&nbsp地址：</label>
+                <input type="number" name="" id="">
+            </p>
+            <p>
+                <label for="">Email：</label>
+                <input type="password" name="" id="">
+            </p>
+            <p>
+                <label for="">性別：</label>
+                <input type="radio" name="gender" id="male">
+                <label for="">male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="">female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="">other</label>
+            </p>
+            <p>
+                <!-- 多選【】陣列Array -->
+                <label for="read">興趣：</label>
+                <input type="checkbox" name="love[]" id="bike">
+                <label for="read">閲讀</label>
+                <input type="checkbox" name="love[]" id="bike">
+                <label for="bike">自行車</label>
+                <input type="checkbox" name="love[]" id="ball">
+                <label for="ball">打球</label>
+                <label for="ball">  &nbsp&nbsp其他</label>
+                <textarea for="" cols="20" rows="1"></textarea>
+                <br>
+                <br>
+                <label for="ball">自傳（簡述100字内）：</label>
+                <br>
+                <textarea for="" cols="60" rows="5"></textarea>
+            </p>
+            
+            <p>
+                <label for="ball">填寫日期：</label>
+                <!-- hidden 隱藏欄位 -->
+                <input type="hidden" name="VIP" id="" value="good">
+                <!-- submit 送出表單 -->
+                <input type="date" name="" id="" value="送出">
+                <br>
+                <hr>
+                <input type="submit" name="" id="" value="送出">
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

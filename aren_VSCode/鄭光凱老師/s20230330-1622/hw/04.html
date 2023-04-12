@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>公司職員資料</h1>
+    <form action="" method="">
+        <fieldset>
+        <table border="1px" width="70%">
+            <tr>
+                <td width="30%">
+                    <lebel for="name">姓名</lebel>
+                    <input type="text" name="name" id="name">
+                </td>
+                <td width="30%">
+                    <lebel for="">性別：</lebel>
+                    <input type="radio" name="gender" id="gender" value="male">
+                    <label for="">男</label>
+                    <input type="radio" name="gender" id="gender" value="female">
+                    <label for="">女</label>
+                    <input type="radio" name="gender" id="gender" value="other">
+                    <label for="">第三性</label>
+                </td>
+                <td rowspan="3" width="30%">
+                    <label for="">大頭照</label>
+                    <imput type="image" name="photo" id="photo"></imput>
+                    <img id="upload" src="./uploading.jpg" width="50px" height="50px"
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">出生年月日：</label>
+                    <input type="date" name="date" id="date">
+                </td>
+                <!-- <td>5</td> -->
+                <!-- <td>6</td> -->
+            </tr>
+            <tr>
+                <td>
+                    <label for="">身高：</label>
+                    <input type="number" name="height">
+                </td>
+                <td>
+                    <label for="">體重：</label>
+                    <input type="number" name="weight" id="weight">
+                </td>
+                <!-- <td>9</td> -->
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <!-- <td></td> -->
+                <!-- <td></td> -->
+            </tr>
+        </table>
+        <table border="1px" width="70%">
+            <tr width="30%">
+                <td>
+                    <label for="number">電話：</label>
+                    <input type="tel" name="tel" id="tel">
+                </td>
+                <td>
+                    <label for="number">手機</label>
+                    <input type="phone_number" name="phone" id="phone">
+                </td>
+            </tr>
+            <tr width="30%">
+                <td colspan="2">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </td>
+                <!-- <td></td> -->
+            </tr>
+            <tr width="30%">
+                <td colspan="2">
+                    <label for="">地址</label>
+                    <input type="text" number="address" id="address">
+                </td>
+                <!-- <td>16</td> -->
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="">設定密碼</label>
+                    <input type="password" number="password" id="password">
+                </td>
+                <!-- <td></td> -->
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

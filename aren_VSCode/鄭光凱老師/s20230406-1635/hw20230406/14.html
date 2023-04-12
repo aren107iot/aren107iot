@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            border: 10px solid pink;
+            width: 250px;
+            height: 250px;
+            
+        }
+        #box2{
+            border: 10px solid blue;
+            width: 250px;
+            height: 250px;
+        }
+        #box1 p{
+            border: 10px solid rgb(94, 218, 12);
+        }
+        #box3{
+            border: 10px solid pink;
+            width: 250px;
+            height: 250px;
+            padding: 60px;
+            margin: 30px;
+            
+        }
+        #box4{
+            border: 10px solid blue;
+            width: 250px;
+            height: 250px;
+        }
+        #box3 p{
+            border: 10px solid rgb(94, 218, 12);
+        }
+
+
+        #box5{
+            border: 10px solid pink;
+            width: 250px;
+            height: 250px;
+            padding: 30px;
+            margin: 30px;
+            box-sizing: border-box;
+
+            
+        }
+        #box6{
+            border: 10px solid blue;
+            width: 250px;
+            height: 250px;
+        }
+        #box5 p{
+            border: 10px solid rgb(94, 218, 12);
+            
+        }
+
+    </style>
+
+</head>
+<body >
+<div >
+    <p>沒有設pedding也沒有margin</p>
+    <p >
+        
+        <div id="box1">
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nostrum numquam natus impedit, eligendi assumenda quod asperiores sapiente in debitis quis sequi mollitia eum aut eius aperiam, quisquam aliquid. Maxime, commodi a. Optio autem mollitia id ab ducimus iusto repellat, rem quia excepturi ad ipsam sequi distinctio. </p>
+        </div>
+        <div id="box2"></div>
+    
+
+    </p>
+    <hr/>
+    <p>粉紅色正方形設pedding影響內部的綠色正方形和粉紅色距離;粉紅色設margin影響外部的藍色正方形和粉紅色正方形距離</p>
+    <p>
+        
+        <div id="box3">
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nostrum numquam natus impedit, eligendi assumenda quod asperiores sapiente in debitis quis sequi mollitia eum aut eius aperiam, quisquam aliquid. Maxime, commodi a. Optio autem mollitia id ab ducimus iusto repellat, rem quia excepturi ad ipsam sequi distinctio. </p>
+        </div>
+        <div id="box4"></div>
+    
+
+    </p>
+</div>
+    
+
+    <hr/>
+    <p>上面的粉紅色設pedding被內部的綠色正方形影響而變大(預設box-sizing: content-box;);粉紅色設box-sizing: border-box;後維持原來大小</p>
+    <div id="box5">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur nostrum numquam natus impedit, eligendi assumenda quod asperiores sapiente in debitis quis sequi mollitia eum aut eius aperiam, quisquam aliquid. Maxime, commodi a. Optio autem mollitia id ab ducimus iusto repellat, rem quia excepturi ad ipsam sequi distinctio. </p>
+   </div>
+   <div id="box6"></div>
+    
+    
+
+</body>
+</html>

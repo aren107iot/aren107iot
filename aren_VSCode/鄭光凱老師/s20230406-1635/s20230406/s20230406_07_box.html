@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            /* 衝突時會以最大的為主 */
+            /* margin-top:100px;
+            margin-bottom: 50px; */
+            /* margin-left: 200px; */
+            /* margin: auto ; */
+
+            /* 上下 左右 */
+            /* margin : 100px 50px;  */
+
+            /* 上 右 下 左 */
+            margin : 30px 50px 100px 20px;
+            
+        }
+        /* margin 左右 會相加 */
+        /* margin 上下 會取最大值 */
+        .inner-img{
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+            margin-right : 5px;
+            margin-left: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://picsum.photos/id/244/300/300" alt="" srcset="" class="inner-img">
+        <!-- <img src="https://picsum.photos/id/240/300/300" alt="" srcset="">
+        <img src="https://picsum.photos/id/242/300/300" alt="" srcset=""> -->
+    </div>
+    <div class="box">
+        
+    </div>
+
+    <img src="https://picsum.photos/id/244/300/300" alt="" srcset="">
+</body>
+</html>

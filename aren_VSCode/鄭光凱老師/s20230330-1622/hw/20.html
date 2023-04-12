@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #chinese{width: 200px;}
+    </style>
+
+</head>
+<body>
+    <h1>員工資料</h1>
+    <form action="url" method="">
+        <fieldset>
+            <legend>填選資料</legend>
+
+        <p>
+            <!-- label 選項文字 --> 
+            <!-- text 文字 -->
+            <label for="name">姓名:</label>
+            <input type="text" name="name" id="name">
+        </p>
+        <p>
+            <!-- label 選項文字 -->
+            <label for="ID card number">身分證號碼:</label>
+            <input type="text" name="ID card number" id="ID card number">
+        </p>
+
+        <p>
+            <!-- label 選項文字 -->
+            <label for="account number">帳號:</label>
+            <input type="text" name="account number" id="account number">
+        </p>
+        <p>
+            <!-- passward 密碼 -->
+            <label for="password">密碼:</label>
+            <input type="password" name="password" id="password">
+        </p>
+        <p>
+            性別:
+            <!-- radio 單選 送到PHP 只送一個gender name -->
+            <!-- label 放後面 -->
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">男</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">女</label>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">其他</label>
+        </p>
+        <p>
+            職位:
+            <!-- checkbox 多選 []陣列 array -->
+            <input type="checkbox" name="love[]" id="staff">
+            <label for="">員工</label>
+            <input type="checkbox" name="love[]" id="manager">
+            <label for="">經理</label>
+            <input type="checkbox" name="love[]" id="associate">
+            <label for="">協理</label>
+        </p>
+        <p>
+            個人資料上傳:
+            <!-- 上傳檔案 -->
+            <input type="file" name="file" id="file">
+        </p>
+        <p>
+            報到日期:
+            <!-- date 日期 -->
+            <input type="date" name="date" id="date">
+        </p>
+
+       
+
+        <P>
+          身分別:
+            <select name="separate" id="separate">
+                <option value="new">新進</option>
+                <option value="resign">離職</option>
+                <option value="return">重回</option>
+            </select>
+        </P>
+       
+        <p>
+            備註:
+            <!-- textarea 備註 -->
+            <br>
+            <textarea name="textarea" id="textarea" cols="30" rows="5">
+            </textarea>
+        </p>
+
+        <p>
+            <!-- hidden隱藏欄位 -->
+            <input type="hidden" name="vip" id="vip" value="good">
+            <!-- submit 送出 form表單 -->
+            <input type="submit" name="submit" id="submit" value="送出">
+            <!-- reset 重設表單 -->
+            <input type="reset" value="重新設定">
+        </p>
+        <hr>
+    </fieldset>
+    </form>
+    <!-- form end -->
+</body>
+</html>

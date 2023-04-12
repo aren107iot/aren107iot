@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            text-align: center;
+
+        }
+        .border-box{
+            /* border-color: rgb(255, 94, 0); */
+            border: 10px solid #ee0a0a;
+            /* size: 500px; */
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background-color: #aaf;
+            box-sizing: border-box;
+        }
+        .content-box{
+            border: 10px solid #ff0404;
+            /* size: 500px; */
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            background-color: #aaf;
+            box-sizing: content-box;
+            padding: 0px;
+        }
+        p{
+            float: left;
+            padding: 20px;
+;
+        }
+        article{
+            background-color: #ccc;
+            margin: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>border-box 100*100 <br>border: 10+10px <br>content: 80px</p>
+    <article><div class="border-box"></div></article>
+    <article><div class="content-box">content-box <br>100*100px <br> content: 100px</div></article>
+
+</body>
+
+</html>

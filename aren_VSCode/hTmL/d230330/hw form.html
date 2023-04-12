@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本資料</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+            background-color: #9fe6c2;
+        }
+
+        .aClass {
+           
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- form start -->
+    <form action="url" method="get">
+        <fieldset>
+            <legend>基本資料</legend>
+            <table>
+                <tr>
+                    <td style="width: 25%;">
+                        請上傳照片
+                    </td>
+                    <td style="width: 25%;">
+                        <input type="file" name="file" id="file">
+                    </td>
+                    <td style="width: 25%;">
+                        <label for="name">姓名</label>
+                    </td>
+                    <td style="width: 25%;">
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name">性別</label><br>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="">other</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="">female</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="">male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>興趣</td>
+                    <td> <input type="checkbox" name="love[]" id="bike">
+                        <label for="">bike</label>
+                    </td>
+                    <td> <input type="checkbox" name="love[]" id="ball">
+                        <label for="">ball</label>
+                    </td>
+                    <td> <input type="checkbox" name="love[]" id="ball">
+                        <label for="">ball</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="確定送出"></td>
+                    <td><input type="reset" value="新的一張"></td>
+                    <td>填表日期</td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+    </form>
+    <!-- form end -->
+
+</body>
+
+</html>

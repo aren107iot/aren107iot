@@ -1,0 +1,14 @@
+margin為border邊框線往外推
+padding為border邊框線往內推
+
+box-sizing: border-box包含border與padding的值
+box-sizing: content-box不包含border與padding的值
+
+box-sizing: content-box;(預設為content-box)
+width寬跟height高的值定住，往外擴
+
+box-sizing: border-box;往內縮，需扣掉padding與border的值
+
+懶人包:每次寫網頁時
+最上面設定box-sizing: border-box
+width=content-border-padding

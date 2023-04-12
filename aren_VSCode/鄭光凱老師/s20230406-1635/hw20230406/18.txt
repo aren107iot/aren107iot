@@ -1,0 +1,4 @@
+margin數值是border往外推間距
+padding數值是border往內推間距
+box-sizing:contentBox不含border、padding
+box-sizing:border-box有含border、padding
