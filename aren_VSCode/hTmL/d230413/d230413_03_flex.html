@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* display: flex; */
+            flex-direction: column;
+            width: 100%;
+            background-color: rgb(144, 238, 144);
+            flex-wrap: wrap;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            /* border-radius: 25px; */
+            
+        }
+
+        .group {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            /* background-color: lightblue; */
+            border: 1px solid black;
+            width: 100%;
+            /* height: auto; */
+            /* height: 200px; */
+            align-items: center;
+            /* margin: calc(0.1%); */
+            flex-wrap: wrap;
+            /* flex-basis: 600px; */
+        }
+
+        .item1 {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            /* background-color: lightblue; */
+            border-radius: 25px;
+            /* margin: calc(5% - 2%); */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2 {
+            display: flex;
+            width: 500px;
+            height: 250px;
+            /* background-color: lightblue; */
+            border-radius: 25px;
+            margin: calc(5% - 2%);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2>div {
+            margin: calc(5% - 2%);
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body style="background-color: rgba(192, 192, 192, 0.349);">
+    <!-- <div class="container"> -->
+        <div class="group">
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item2">
+                <div>介紹餐點:<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nihil! ipsum dolor
+                    sit amet consectetur adipisicing elit. </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item2">
+                <div>介紹餐點:<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nihil! ipsum dolor
+                    sit amet consectetur adipisicing elit. </div>
+            </div>
+        </div>
+        <div class="group">
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item1">
+                <div><img src="https://picsum.photos/250" alt=""></div>
+            </div>
+            <div class="item2">
+                <div>介紹餐點:<br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, nihil! ipsum dolor
+                    sit amet consectetur adipisicing elit. </div>
+            </div>
+        </div>
+    <!-- </div> -->
+</body>
+
+</html>
