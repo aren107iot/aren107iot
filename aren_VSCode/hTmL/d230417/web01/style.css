@@ -1,0 +1,45 @@
+h1 {
+    color: blue;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    /* background-color: lightgrey; */
+    width: 1024px;
+    /* height: 768px; */
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+    border: solid 1px black;
+}
+
+.top {
+    background-color: lightblue;
+    flex-direction: row;
+    flex-basis: 1000px;
+    border: 1px solid black;
+    height: 65px;
+}
+
+.aside {
+    border: 1px solid black;
+    flex-basis:215px;
+    height: calc(768px - 65px - 20px);
+
+}
+
+.section{
+    border: 1px black solid;
+    flex-basis:770px;
+}
+
+.footer{
+    border: 1px black solid;
+    flex-basis: 1000px;    
+}
