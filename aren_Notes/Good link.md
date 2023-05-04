@@ -47,7 +47,9 @@ https://www.sublimetext.com/ note
 
 <hr>
 
-https://mackliu.github.io/php-book/categories/ Php教學筆記
+https://mackliu.github.io/php-book/categories/ 劉老師Php教學筆記
+
+https://portfolio.mackliu.com/ 劉老師作品集自動產生page
 
 https://gitbook.tw/chapters/github/using-github-pages GitHub高見龍「五倍紅寶石」創辦人# 「微痛」學習法
 
@@ -55,12 +57,19 @@ https://www.hexschool.com/ 六角學院
 
 https://training.pada-x.com/ 彭彭的課程教學
 
+https://seanphpbook.blogspot.com/ # [謝晒的PHP網頁設計)
 <hr>
 
 Photoshops
 https://unsplash.com/t/wallpapers 免費圖庫
 
 https://cc0.wfublog.com/ 免費圖庫
+
+https://www.freepik.com/ 參考素材
+
+https://cc0.wfublog.com/ CC雲圖 免費圖片
+
+http://www.akuziti.com/ 字體產生網站
 
 <hr>
 

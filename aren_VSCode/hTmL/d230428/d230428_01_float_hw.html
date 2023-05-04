@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /* box-sizing: content-box; */
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .container {
+            width: 100%;
+            margin: auto;
+        }
+
+        .container>.float {
+            float: left;
+            height: 10vh;
+            border-radius: 15px;
+            /* margin-left: 0.5%; */
+
+            /* 使用border把文字往內推 */
+            /* border: 20px solid white; */
+
+            /* margin: 10px; */
+        }
+
+        .float1 {
+            background-color: lightblue;
+            width: 70%;
+        }
+
+        .float2 {
+            background-color: lightcoral;
+            width: 30%;
+        }
+
+        
+        .float4 {
+            background-color: lightgoldenrodyellow;
+            width: 20%;
+        }
+        
+        .float5 {
+            background-color: lightgray;
+            width: 50%;
+        }
+        
+        .float6 {
+            background-color: lightgreen;
+            width: 30%;
+        }
+        
+        .float8 {
+            float: left;
+            width: 100%;
+            background-color: lightpink;
+        }
+        .clearfix {
+            clear: both;
+            /* border: 1pc solid black; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="float float1">01</div>
+        <div class="float float2">02</div>
+        <div class="clearfix"></div>
+        <div class="float float4">04</div>
+        <div class="float float5">05</div>
+        <div class="float float6">06</div>
+        <div class="clearfix"></div>
+        <footer class="float8">08</footer>
+    </div>
+</body>
+
+</html>

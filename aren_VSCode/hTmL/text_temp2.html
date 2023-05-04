@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>float 範例</title>
+	<link rel="stylesheet" href="css/float範例.css">
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+.wrap{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrap h2{
+	margin: 10px;
+	font-size: 26px;
+}
+
+.wrap h4{
+	font-size: 18px;
+}
+
+.container{
+	background: orange;
+	margin: 20px 0;
+}
+
+.clear:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.pinkbox{
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+}
+
+.bluebox{
+	width: 200px;
+	height: 100px;
+	background-color: blue;
+}
+
+.float-left{
+	float: left;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+	<div class="wrap">
+
+		<h2>只在粉色箱子設定float: left</h2>
+		<h4>藍色會重疊到粉色的部分</h4>
+
+		<div class="container clear">
+			<div class="pinkbox float-left"></div>
+			<div class="bluebox"></div>
+		</div>
+
+		<h2>兩個都設定float: left</h2>
+		<h4>往左邊並排排列</h4>
+
+		<div class="container clear">
+			<div class="pinkbox float-left"></div>
+			<div class="bluebox float-left"></div>
+		</div>
+
+	</div>
+
+</body>
+</html>

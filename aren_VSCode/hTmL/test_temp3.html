@@ -1,0 +1,39 @@
+<section class="wrap">
+    <div class="box">
+      <div class="sticky">Sticky 1</div>
+    </div>
+    <div class="box">
+      <div class="sticky">Sticky 2</div>
+    </div>
+    <div class="box">
+      <div class="sticky">Sticky 3</div>
+    </div>
+    <div class="box">
+      <div class="sticky">Sticky 4</div>
+    </div>  
+  </section>
+  <style>
+      .box{
+        height: 100vh;
+        display: flex;
+      }
+      .wrap .box:nth-of-type(odd){
+        background-color: #ddd;
+      }
+      .wrap .box:nth-of-type(even){
+        background-color: #aaa;
+      }
+      .sticky{
+        width: 100px;
+        font-size: 15px;
+        height: 100px;
+        background-color: red;
+        color: #fff;
+        position: sticky;
+        top: 10px;
+        margin: 10px;
+        text-align: center;
+        line-height: 100px;
+      }
+
+  </style>

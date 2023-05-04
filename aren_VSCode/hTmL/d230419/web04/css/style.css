@@ -1,0 +1,9 @@
+
+body>main>*{
+    border: 1px solid black;
+}
+
+main{
+    width: 1024px;
+    height: 768px;
+}

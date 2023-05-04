@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: #eee;
+        }
+
+        .container {
+            border: 5px double black;
+            height: 400px;
+            width: 900px;
+            margin: 50px auto;
+            background-color: white;
+        }
+
+        .logo {
+            text-align: center;
+            /* width: 30%; */
+            padding: 2%;
+        }
+        .logo>img{
+            width: 18%;
+        }
+
+        .nav {
+            display: flex;
+            /* flex-basis: 70%; */
+            width: 65%;
+            border-top: 3px solid black;
+            border-bottom: 1px solid black;
+            justify-content: space-around;
+            margin: 0px auto 2%;
+        }
+
+        .nav>.item {
+            /* padding: 10px auto; */
+            /* background-color: aqua; */
+
+        }
+
+        .nav>.item>a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        .content {
+            /* margin: auto; */
+            text-align: center;
+        }
+
+        .content>img {
+            /* margin: auto; */
+            width: 65%;
+            /* text-align: center; */
+        }
+
+        .footer {
+            width: 65%;
+            text-align: center;
+            margin: 1% 15%;
+            font-size: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./image/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <div class="item"><a href="#">news</a></div>
+            <div class="item"><a href="#">home</a></div>
+            <div class="item"><a href="#">product</a></div>
+            <div class="item"><a href="#">content</a></div>
+            <div class="item"><a href="#">other</a></div>
+        </div>
+        <div class="content">
+            <img src="./image/content.png" alt="">
+        </div>
+        <div class="footer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus molestiae iste dignissimos
+                laboriosam voluptatibus recusandae explicabo, accusantium aspernatur perferendis maxime iusto eos
+                ratione voluptate doloremque esse commodi, libero harum aliquid.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

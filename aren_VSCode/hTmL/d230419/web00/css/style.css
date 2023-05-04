@@ -1,0 +1,138 @@
+/* h1{
+    color: blue;
+} */
+
+* {
+    box-sizing: border-box;
+    font-family: "標楷體";
+}
+
+body {
+    display: flex;
+    width: 1024px;
+    /* height: 768px; */
+    padding: 0 12px;
+    margin: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+/* top */
+.top {
+    flex-basis: 1000px;
+    height: 65px;
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+
+/* aside */
+.aside {
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    border: 1px solid black;
+    border-right: 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.aside>.menu {
+    /* height: calc (100% - 25px); */
+    flex-basis: calc(100% - 25px);
+    border: 1px solid #ccc;
+}
+
+/* .menu > .menu-header */
+.menu>div {
+    font-weight: 500;
+    font-size: 25px;
+    color: #f0f;
+    margin: 20px 55px;
+    /*  */
+    border-bottom: 1px solid black;
+    /* text-decoration: underline; */
+}
+
+.menu>a {
+    /* a tag inline轉block 會換行 */
+    display: block;
+    background-image: url('../images/menu1.png');
+    /* 使圖片不重複填滿 */
+    /* background-repeat: no-repeat; */
+
+    /* 寬高見menu1.png，設定寬高可防止圖片重複填滿 */
+    width: 200px;
+    height: 35px;
+    margin: 10px auto;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-top: 8px;
+}
+
+.menu>a:hover {
+    background-image: url('../images/menu2.png');
+}
+
+.menu > .menu-btn{
+    text-decoration:underline;
+    color: #00f;
+}
+
+
+.aside>.update {
+    /* height: 25px; */
+    border: solid 1px #ccc;
+    flex-basis: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* section */
+.section {
+    /* flex-basis: 770px; */
+    flex-basis: calc(100% - 215px);
+    /* height: calc(768px - 65px - 20px); */
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.section>.marquee {
+    height: 29px;
+    border: #ccc 1px solid;
+    font-size: 24px;
+    /* font-family: "標楷體"; */
+    color: #0000ff;
+    flex-basis: 29px;
+    /* padding-top: 5px; */
+
+}
+
+.section>.content {
+    height: calc(100% - 29px);
+    border: 1px #ccc solid;
+}
+
+
+.content>iframe {
+    /* 調整main人像圖片顯示範圍 */
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+/* footer */
+.footer {
+    flex-basis: 1000px;
+    height: 20px;
+    border: 1px solid black;
+    border-top: 0px;
+    
+}
