@@ -71,10 +71,14 @@ https://cc0.wfublog.com/ CC雲圖 免費圖片
 
 http://www.akuziti.com/ 字體產生網站
 
+https://www.brusheezy.com/ 免費筆刷
+
 <hr>
 
 
 https://blog.darkthread.net/blog/mdn-web-docs/  自學網頁的權威資源- MDN Web Docs -
 
 https://www.w3schools.com/default.asp  w3schools
+
+https://cdnjs.com/libraries/normalize  # normalize css
 
