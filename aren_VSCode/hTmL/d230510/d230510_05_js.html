@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        .class1{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+
+    </div>
+<div class="class1"></div>
+<div class="class1"></div>
+
+
+    <script>
+        document.getElementById('box').style.backgroundColor = 'red';
+        let helloText = 'Hello Js';
+        console.log(helloText);
+
+        let name = 'lai' ;
+        console.log(`hello ${name} - js`);
+        name = 'good';
+        console.log(name);
+        
+        
+
+        document.getElementsByClassName('class1').style.backgroundColor = 'lightpink';
+
+    </script>
+
+</body>
+
+</html>

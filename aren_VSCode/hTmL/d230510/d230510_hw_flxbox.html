@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 33.3%;
+            height: 300px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .a1 {
+            display: block;
+            background-color: lightblue;
+
+        }
+
+        .a2 {
+            display: inline-block;
+            background-color: lightblue;
+
+        }
+
+        .a3 {
+            display: inline;
+            background-color: lightblue;
+
+        }
+
+
+
+        @media screen and (max-width: 600px) {
+            div {
+                width: 100%;
+                height: 300px;
+                border: 1px solid black;
+                background-color: lightpink;
+            }
+
+            section {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .a1 {
+                display: block;
+                background-color: lightblue;
+
+            }
+
+            .a2 {
+                display: inline-block;
+                background-color: lightblue;
+
+            }
+
+            .a3 {
+                display: inline;
+                background-color: lightblue;
+
+            }
+
+            .a4 {
+                display: flex;
+                background-color: lightblue;
+
+            }
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <section class="container">
+        <div class="box1">
+            <aside class="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+        </div>
+        <div class="box2">
+            <aside class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+        </div>
+        <div class="box3">
+            <aside class="a3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+        </div> 
+         <div class="box4">
+            <aside class="a4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+            <aside class="a4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel est minima, animi repellendus
+                explicabo illo?</aside>
+        </div>
+
+    </section>
+</body>
+
+</html>
