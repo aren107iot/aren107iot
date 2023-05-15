@@ -82,3 +82,11 @@ https://www.w3schools.com/default.asp  w3schools
 
 https://cdnjs.com/libraries/normalize  # normalize css
 
+https://cubic-bezier.com/  貝茲取線參數
+
+---
+https://www.tenlong.com.tw/ 天瓏書局 or IT Ebooks
+
+https://www.gomaji.com/ GOMAJI 電商
+
+https://www.qburger.com.tw/menu/all 

@@ -48,11 +48,16 @@
             let mobileTextValue = mobileText.value;
             console.log(nameTextValue);
             console.log(mobileTextValue);
-            if (nameTextValue==`undefined`) {
-                document.getElementById('result').innerText = " result..";
+            if (typeof nameText.value === 'String' ) {
+                document.getElementById('result').innerText = " Input is not string";
             } else {
                 document.getElementById('result').innerText = nameTextValue + '的電話是' + mobileTextValue;
             }
+            // if (nameTextValue==="") {
+            //     document.getElementById('result').innerText = " Input is empty";
+            // } else {
+            //     document.getElementById('result').innerText = nameTextValue + '的電話是' + mobileTextValue;
+            // }
             
         }
         

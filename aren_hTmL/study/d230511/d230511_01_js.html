@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* margin:auto; */
+            text-align: center;
+            margin-bottom: 30px;
+            /* background-color: lightblue;             */
+        }
+
+        .row {
+            margin-bottom: 30px;
+        }
+
+        #tip {
+            color: red;
+            display: none;
+        }
+
+        #result {
+            font-size: 48px;
+            color: green;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <label for="">num1:</label>
+            <input type="number" id="num1" value="0">
+        </div>
+        <div class="row">
+            <label for="">num2:</label>
+            <input type="number" id="num2" value="0">
+        </div>
+        <div class="row" id="optButtons">
+            <button type="button" id="btnAdd" onclick="">plus</button>
+            <button type="button" id="btnAdd" onclick="">minus</button>
+            <button type="button" id="btnAdd" onclick="">multiplied</button>
+            <button type="button" id="btnAdd" onclick="">division</button>
+        </div>
+        <div class="row">
+            <button type="button" id="btnResult" onclick="btnResult()">calc results</button>
+            <button type="button" id="btnReset" onclick="btnReset()">all clear</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="tip">
+            請輸入數字
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="result">
+            計算結果
+        </div>
+    </div>
+
+
+    <script>
+        function initfun() {
+            console.log('initfun run');
+            tip.style.display = 'none';
+            result.style.display = 'none';
+        }
+
+        function btnReset() {
+            console.log('resetFun run');
+            initfun();
+            num1.value = '';
+            num2.value = '';
+        }
+
+        function showResults() {
+            tip.style.display = 'none';
+            result.style.display = 'block';
+            console.log('showResults run');
+        }
+
+        function btnResult() {
+            console.log('btnresult click');
+            // 如果字串長度小於1,判斷字串是否為空
+            if (num1Value.length < 1 || num2Value.length < 1) {
+                tip.style.display = block;
+                result.style.display = none;
+                document.getElementById('result').innerText = " Input error";
+                alert('input error');
+                // 跳出此function - return false;
+                return false;
+            } else {
+                console.log(num1Value.value);
+                console.log(num2Value.value);
+                document.getElementById('result').innerText = Number(num1Value.value) + Number(num2Value.value);
+                showResults();
+                console.log('else show answer');
+            }
+        }
+
+        let num1Value = document.getElementById('num1');
+        let num2Value = document.getElementById('num2');
+
+        console.log(num1);
+        console.log(num2);
+
+        initfun();
+        tip.style.display = 'block';
+
+
+
+    </script>
+</body>
+
+</html>
