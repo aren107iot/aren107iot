@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 5px;
+        }
+
+        .container {
+            width: 90vw;
+            min-width: 300px;
+            background-color: lightblue;
+            border-radius: 10px;
+        }
+
+        .row {
+            display: flex;
+            padding: 10px;
+        }
+
+        .sales_msg {
+            color: red;
+        }
+
+        input {
+            max-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <label for="">品項1</label>
+            <img src="https://picsum.photos/id/100/50" alt="network error">
+            <label for="">價格</label>
+            <input type="number" id="unit_price1" value="100" readonly>
+            <label for="">數量:</label>
+            <label for="" id="item1_quantity">0</label>
+            <button type="button" onclick="incrementItem('item1_quantity', unit_price1.value);">+</button>
+            <button type="button" onclick="decrementItem('item1_quantity', unit_price1.value);">-</button>
+            <div class="Subtotal">
+                <label for="">小計:</label>
+                <label for="" id="selling_price1">0</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <label for="">品項2</label>
+            <img src="https://picsum.photos/id/200/50" alt="network error">
+            <label for="">價格</label>
+            <input type="number" id="unit_price2" value="200" readonly>
+            <label for="">數量:</label>
+            <label for="" id="item2_quantity">0</label>
+            <button type="button" onclick="incrementItem('item2_quantity', unit_price2.value);">+</button>
+            <button type="button" onclick="decrementItem('item2_quantity', unit_price2.value);">-</button>
+            <div class="Subtotal">
+                <label for="">小計:</label>
+                <label for="" id="selling_price2">0</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <select name="opt" id="opt">
+                <option value="0">內用</option>
+                <option value="1">外帶</option>
+            </select>
+            <div class="total">
+                <label for="">總計:</label>
+                <label for="" id="selling_total">0</label>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <label for="" class="sales_msg">今日超過300有20%off!</label>
+        </div>
+    </div>
+
+    <script>
+        function incrementItem(itemId, price) {
+            let itemPriceLabel = document.getElementById(itemId);
+            let selling_price = Number(price);
+        
+            let quantity = parseInt(itemPriceLabel.textContent) || 0;
+            quantity++;
+            itemPriceLabel.textContent = quantity;
+
+            updateSubtotal(itemId, quantity, price);
+            calculateTotal();
+        }
+
+        function decrementItem(itemId, price) {
+            let itemPriceLabel = document.getElementById(itemId);
+            let quantity = parseInt(itemPriceLabel.textContent) || 0;
+            if (quantity > 0) {
+                quantity--;
+                itemPriceLabel.textContent = quantity;
+
+                updateSubtotal(itemId, quantity, price);
+                calculateTotal();
+            }
+        }
+
+        function updateSubtotal(itemId, quantity, price) {
+            let subtotalLabel = document.getElementById('selling_price' + itemId.substring(4));
+            let subtotal = quantity * price;
+            subtotalLabel.textContent = subtotal;
+        }
+
+        function calculateTotal() {
+            let subtotal1 = parseInt(document.getElementById('selling_price1').textContent) || 0;
+            let subtotal2 = parseInt(document.getElementById('selling_price2').textContent) || 0;
+
+            let total = subtotal1 + subtotal2;
+            let discount = 0;
+
+            if (total > 300) {
+                discount = total * 0.2;
+            }
+
+            let finalTotal = total - discount;
+            document.querySelector('.total').textContent = finalTotal;
+        }
+
+        console.log( unit_price1.value );
+        console.log(typeof(unit_price1.value));
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <label for="food_item">品項1</label>
+        <img src="https://picsum.photos/200" alt="network error" height="50px">
+        <label for="selling_price">價格100</label>
+        <label for="selling_price">數量:</label>
+        <label for="item1_price" id="item1_price">0</label>
+        <button type="button" onclick="incrementItem('item1_price', 100);">+</button>
+        <button type="button" onclick="decrementItem('item1_price', 100);">-</button>
+        <div id="Subtotal">
+            <label for="">小計:</label>
+            <label for="" id="selling_price1">0</label>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <label for="food_item">品項2</label>
+        <img src="https://picsum.photos/200" alt="network error" height="50px">
+        <label for="selling_price">價格200</label>
+        <label for="selling_price">數量:</label>
+        <label for="item2_price" id="item2_price">0</label>
+        <button type="button" onclick="incrementItem('item2_price', 200);">+</button>
+        <button type="button" onclick="decrementItem('item2_price', 200);">-</button>
+        <div id="Subtotal">
+            <label for="">小計:</label>
+            <label for="" id="selling_price2">0</label>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <select name="opt" id="opt">
+            <option value="0">內用</option>
+            <option value="1">外帶</option>
+        </select>
+        <div class="total">
+            0
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        今日超過300有20%off!
+    </div>
+
+    <script>
+        function incrementItem(itemId, price) {
+    let itemPriceLabel = document.getElementById(itemId);
+    let quantity = parseInt(itemPriceLabel.textContent) || 0;
+    quantity++;
+    itemPriceLabel.textContent = quantity;
+    
+    updateSubtotal(itemId, quantity, price);
+}
+
+function decrementItem(itemId, price) {
+    let itemPriceLabel = document.getElementById(itemId);
+    let quantity = parseInt(itemPriceLabel.textContent) || 0;
+    if (quantity > 0) {
+        quantity--;
+        itemPriceLabel.textContent = quantity;
+        
+        updateSubtotal(itemId, quantity, price);
+    }
+}
+
+function updateSubtotal(itemId, quantity, price) {
+    let subtotalLabel = document.getElementById('selling_price' + itemId.substring(4));
+    let subtotal = quantity * price;
+    subtotalLabel.textContent = subtotal;
+}
+
+    </script>
+</div>

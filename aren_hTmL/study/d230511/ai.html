@@ -1,0 +1,68 @@
+    <script>
+        // 初始化
+        function initFun() {
+            tip.style.display = 'none';  // 隱藏提示
+            result.style.display = 'none';  // 隱藏结果
+        }
+
+        // 清除输入值
+        function clearInput() {
+            num1.value = ''; //清空
+            num2.value = ''; //清空
+        }
+
+        // 重置
+        function resetFun() {
+            initFun();  // run初始化
+            tip.style.display = 'block';  // 顯示
+            clearInput();  // run清除輸入
+        }
+
+        // 計算
+        function myBtnFun() {
+            let num1Value = num1.value;  //  num1 的值
+            let num2Value = num2.value;  //  num2 的值
+            let optValue = opt.value;  // 選擇運算元
+
+            // 依計算運算元做switch
+            let resultValue = 0;
+            switch (optValue) {
+                case '+':
+                    resultValue = Number(num1Value) + Number(num2Value);  // 加法
+                    break;
+                case '-':
+                    resultValue = Number(num1Value) - Number(num2Value);  // 减法
+                    break;
+                case '*':
+                    resultValue = Number(num1Value) * Number(num2Value);  // 乘法
+                    break;
+                case '/':
+                    resultValue = Number(num1Value) / Number(num2Value);  // 除法
+                    break;
+                default:
+                    alert('opt error'); // show 錯誤訊息
+                    break; 
+            }
+            console.log('resultValue', resultValue);
+
+            result.innerText = resultValue;  // 结果
+
+            initFun();  // run initfun()
+            result.style.display = 'block';  // 顯示ans
+        }
+
+        // 绑定
+        let num1 = document.getElementById('num1');
+        let num2 = document.getElementById('num2');
+        let opt = document.getElementById('opt');
+        let tip = document.getElementById('tip');
+        let result = document.getElementById('result');
+        let myBtn = document.getElementById('myBtn');
+
+        // run完回復預設狀態
+        initFun();
+        tip.style.display = 'block';
+
+    </script>
+
+</body>
