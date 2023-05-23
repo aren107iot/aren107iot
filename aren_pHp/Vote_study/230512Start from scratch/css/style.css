@@ -1,0 +1,10 @@
+main{
+    margin: auto;
+}
+
+.time-set{
+    display:flex;
+    width:70%;
+    min-width:615px;
+    justify-content: space-between;
+}
