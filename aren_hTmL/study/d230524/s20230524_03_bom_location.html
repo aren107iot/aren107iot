@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>location</h3>
+  <button type="button" id="myBtn">myBtn</button>
+  <button type="button" id="myBtn2">myBtn2</button>
+  <p id="myP">
+    按下按鈕顯示目前網址
+  </p>
+
+  <script>
+
+
+    //1.綁定
+    const myBtn = document.getElementById('myBtn');
+    const myBtn2 = document.getElementById('myBtn2');
+    const myP = document.getElementById('myP');
+
+    //2. myBtn.addEventListener .......
+    myBtn.addEventListener('click', function haha () {
+      console.log('click ok');
+      let url = window.location.href;
+      console.log('url', url);
+
+      myP.innerText = url;
+    });
+
+
+    myBtn2.addEventListener('click', haha);
+
+
+    myBtn2.addEventListener('click', function(){
+      console.log(i1)
+    });
+
+    //3. 抓網址 顯示網址
+
+function i1(){
+  console.log("i1");
+}
+
+
+
+  </script>
+</body>
+
+</html>
