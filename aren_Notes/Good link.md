@@ -16,8 +16,7 @@ Fakeimg*https://fakeimg.pl/
 
 svg動畫化**https://maxwellito.github.io/vivus-instant/
 
-
-
+https://skillsweek.wdasec.gov.tw/skillsweek/ 全國技能競賽 7/14-7/16
 
 <hr>
 
@@ -69,12 +68,21 @@ https://cc0.wfublog.com/ 免費圖庫
 
 https://www.freepik.com/ 參考素材
 
+https://www.brusheezy.com/ 筆刷素材
+
 https://cc0.wfublog.com/ CC雲圖 免費圖片
 
 http://www.akuziti.com/ 字體產生網站
 
 https://www.brusheezy.com/ 免費筆刷
 
+https://color.adobe.com/zh/create/color-wheel adobe color
+
+https://www.creative-tim.com/ web模板
+
+https://nipponcolors.com/ japan color
+
+https://www.pantone.com/articles/color-of-the-year 彩通color of the year
 <hr>
 
 
@@ -86,9 +94,12 @@ https://cdnjs.com/libraries/normalize  # normalize css
 
 https://cubic-bezier.com/  貝茲取線參數
 
+https://960.gs/ # 960 Grid System網格設計
+
 ---
 https://www.tenlong.com.tw/ 天瓏書局 or IT Ebooks
 
 https://www.gomaji.com/ GOMAJI 電商
 
 https://www.qburger.com.tw/menu/all 
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+        <label for="mobile">mobile</label>
+        <input type="text" name="mobile" id="mobile">
+        <label for="work_days">work_days</label>
+        <input type="number" name="work_days" id="work_days" value="5">
+        <label for="wage">wage</label>
+        <input type="number" name="wage" id="wage" value="100">
+        <label for="pay">pay</label>
+        <input type="number" name="pay" id="pay" readonly>
+        <input type="button" value="TATOL" id="myBtn">
+        <label for="Salary" id="Salary">Salary</label>
+    </div>
+
+
+    <script>
+        const name = document.getElementById('name');
+        const mobile = document.getElementById('mobile');
+        const work_days = document.getElementById('work_days');
+        const wage = document.getElementById('wage');
+        const pay = document.getElementById('pay');
+        const myBtn = document.getElementById('myBtn');
+        const Salary = document.getElementById('Salary');
+
+        console.log('name', name);
+        console.log('mobile', mobile);
+        console.log('work_days', work_days.value);
+        console.log('wage', wage.value);
+        console.log('pay', pay);
+        console.log('myBtn', myBtn);
+        console.log('Salary', Salary);
+
+        let myObj = {
+            'name': name.innerText,
+            'mobile': mobile.innerText,
+            'work_days': work_days.value,
+            'wage': wage.value,
+            'pay': () => (pay.value = Number(work_days.value) * Number(wage.value), console.log('myObj{pay}')),
+            'myBtn': myBtn,
+            'Salary': Salary,
+        }
+
+        myBtn.addEventListener('click', function () {
+            console.log("myBtn click OK");
+            console.log(myObj);
+            console.log(myObj['wage']);
+            console.log(myObj['work_days']);
+
+            myObj.pay();
+        });
+
+        function myObj() {
+            Obj =
+}
+
+
+    </script>
+
+
+</body>
+
+</html>

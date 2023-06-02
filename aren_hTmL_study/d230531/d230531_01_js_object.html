@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<script>
+  
+
+</script>
+
+<body>
+    <h2>TR elements define table rows</h2>
+    <table style="width:100%">
+        <tr>
+            <th>
+                seat_id
+            </th>
+            <th>
+                name
+            </th>
+        </tr>
+        <tr>
+            <td >
+               <span id="td_seat_id"></span> <!-- <script>document.write(myObj[100])</script> -->
+            </td>
+            <td id="td_name">
+                <!-- <script>document.write(myObj[amy])</script> -->
+            </td>
+        </tr>
+    </table>
+
+
+<script>
+  let myObj = {
+        's1': 'amy',
+        's2': 'bob',
+        's3': 'cat',
+        100: 100,
+        99: 99,
+        '100': '100',
+        // 100: 100,
+    }
+    console.log('myObj', `${myObj}`);
+    console.log('myObj', myObj);
+    console.log('myObj[100]', typeof (myObj[100]));
+    console.log('myObj[100]', typeof (myObj['100']));
+    console.log('myObj[99]', typeof (myObj[99]));
+    console.log('myObj[amy]', typeof (myObj['amy']));
+    const text01 = "文字" ; 
+    console.log(text01);
+
+    const td_seat_id = document.getElementById('td_seat_id');
+    const td_name = document.getElementById('td_name');
+    document.getElementById('td_seat_id').textContent = text01;
+
+     td_name.innerText = 2;
+</script>
+
+</body>
+
+</html>

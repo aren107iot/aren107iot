@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main id="myMain">
+        <ul id="myUl">
+            <li>amy</li>
+            <li>bob</li>
+            <li>cat </li>
+        </ul>
+    </main>
+    <button type="button" id="myBtn_li">li</button>
+    <button type="button" id="myBtn_div">div</button>
+    <button type="button" id="myBtn_del">del</button>
+
+    <script>
+        const myUl = document.getElementById('myUl');
+        const myMain = document.getElementById('myMain');
+        const myBtn = document.getElementById('myBtn');
+        const myBtn_div = document.getElementById('myBtn_div');
+        const myBtn_del = document.getElementById('myBtn_del')
+        const body = document.getElementsByName
+
+        myBtn.addEventListener('click', function () {
+            // 建立element
+            let li = document.createElement('li');
+            // 放入
+            let textNode = document.createTextNode('test');
+            li.appendChild(textNode);
+            // 設置 ID
+    // li.setAttribute('id', 'newLi');
+
+// 或設置 class
+// li.classList.add('newLiClass');
+            myUl.appendChild(li);
+            console.log('li', li);
+        })
+
+        myBtn_div.addEventListener('click', function () {
+            // 建立element
+            let div = document.createElement('div');
+            // 放入
+            let textNode = document.createTextNode('test');
+            div.appendChild(textNode);
+            myMain.appendChild(div);
+            console.log('li', div);
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

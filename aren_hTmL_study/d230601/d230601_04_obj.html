@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="button" value="" id="myBtn">
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+        let myObj = {
+            'name': 'amy',
+            'mobile': '0912345678',
+            'hello': function () {
+                console.log('hello');
+            },
+            'sayAll': function () {
+console.log('this',this);
+console.log(`Hello ${this,name} ${this.mobile}`);
+
+            }
+        }
+
+        console.log('myObj.name', myObj.name);
+        console.log('myObj["mobile"]', myObj['mobile']);
+        myObj.hello();
+        myObj.name();
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

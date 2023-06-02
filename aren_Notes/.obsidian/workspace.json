@@ -109,7 +109,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "5.Git(劉勤永老師).md",
                 "mode": "source",
                 "source": false
               }
@@ -184,8 +184,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -205,7 +204,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "5.Git(劉勤永老師).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +221,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "5.Git(劉勤永老師).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -245,7 +244,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "5.Git(劉勤永老師).md"
               }
             }
           }
@@ -253,8 +252,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -268,28 +266,28 @@
   },
   "active": "974d144e043286be",
   "lastOpenFiles": [
+    "temp github.md",
+    "Good link.md",
+    "2.uiux(蔡坤炎老師).md",
+    "3.ps(蔡坤炎老師).md",
+    "image/Pasted image 20230515092640.png",
     "8.php.md",
     "未命名.md",
-    "Pasted image 20230526102035.png",
-    "Pasted image 20230526102017.png",
-    "Pasted image 20230526095508.png",
-    "Pasted image 20230526095449.png",
-    "temp github.md",
+    "image/Pasted image 20230526102035.png",
+    "image/Pasted image 20230526102017.png",
+    "image/Pasted image 20230526095508.png",
+    "image/Pasted image 20230526095449.png",
     "issue.md",
     "10.Js.md",
-    "Pasted image 20230524094308.png",
-    "Pasted image 20230524094222.png",
-    "Good link.md",
+    "image/Pasted image 20230524094308.png",
+    "image/Pasted image 20230524094222.png",
     "9.資料庫(劉老師).md",
     "1.html&css(鄭光凱老師).md",
     "7.php-basic.md",
-    "3.ps(蔡坤炎老師).md",
     "5.Git(劉勤永老師).md",
-    "Pasted image 20230519090331.png",
-    "Pasted image 20230519090203.png",
-    "2.uiux(蔡坤炎老師).md",
+    "image/Pasted image 20230519090331.png",
+    "image/Pasted image 20230519090203.png",
     "4.課程講解(劉勤永老師).md",
-    "Pasted image 20230515092640.png",
     "6.Github(劉勤永).md",
     "image/Pasted image 20230425155537.png",
     "Pasted%20image%2020230410103621.png.md",

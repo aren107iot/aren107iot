@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">中文姓名</label>
+    <input type="text" name="chinese" id="chinese">
+    <label for="">英文姓名</label>
+    <input type="text" name="english" id="english">
+
+
+    <script>
+        let array = [];
+        array.push('1-1');
+        array.push('1-2');
+        //  
+        let Obj = {};
+        Obj.array = array;
+        // 
+        // 
+        console.log(Obj);
+        console.log(array);
+        // 
+        console.log("---");
+        // 
+        let Obj2 = {};
+        Obj2.new1 = 'new1';
+        Obj2.new2 = 'new2';
+        // 
+        let array2 = [];
+        array2.push(Obj2);
+        // 
+        // 
+        array.push(Obj2);
+        Obj.array2=array2;
+
+
+        console.log(Obj2);
+        console.log(array2);
+    </script>
+
+</body>
+
+</html>
