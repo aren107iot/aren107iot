@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let ageArr = [20, 15, 30, 55, 10, 5, 25];
+        let forEachArr = [];
+        ageArr.forEach(function (value) {
+            if (value >= 18) {
+                forEachArr.push(value);
+            }
+        });
+        console.log('newArr', forEachArr);
+
+        let filterArr = ageArr.filter(function (value) {
+            return value >= 18;
+        })
+        console.log('filterArr', filterArr);
+
+        let studentArr = ['amy', 'bob', 'cat', 'dog', 'egg'];
+        studentArr.forEach(function (value, key) {
+            if (value == 'dog') {
+                console.log(`key == ${key}`);
+                console.log(`value == ${value}`);
+            }
+        })
+        console.log('studentArr amy key =>', studentArr.indexOf('egg'));
+
+        //sum
+        let numArr = []
+        for (let i = 0; i < 10; i++) {
+            numArr.push(i+1);
+        }
+        sum = 0;
+        numArr.forEach(function (value, key) {
+            sum += value;
+
+            console.log('key', key);
+            console.log('value', value);
+        })
+
+
+        console.log('---');
+        let getSum = numArr.reduce(function (total, value, key) {
+            console.log('total', total);
+            console.log('value', value);
+            return total + value;
+        }, 500);
+
+
+    </script>
+
+</body>
+
+</html>

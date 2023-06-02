@@ -1,0 +1,41 @@
+    <button type="button" id="myBtn">myBtn</button>
+
+    <script>
+        const myBtn = document.getElementById('myBtn');
+
+        // origin
+        myBtn.addEventListener('click', function (value,key) {
+            console.log('function (value,key) {}');
+            console.log('原始');
+        })
+        // 改箭頭
+        myBtn.addEventListener('click', (value,key) => {
+            console.log('(value,key) => {}');
+            console.log('箭頭');
+        })
+        //省略大括弧
+        myBtn.addEventListener('click', (value,key) => (
+            console.log('(value,key) => ()'),
+            console.log('省略大括弧')
+        ))
+        //一個變數省略括弧
+        myBtn.addEventListener('click', value => (
+            console.log('value => ()'),
+            console.log('一個變數省略括弧')
+        ))
+        //無變數需加括弧
+        myBtn.addEventListener('click', () => (
+            console.log('() => ()'),
+            console.log('無變數需加括弧')
+        ))
+        // ---
+        // 重新定義的 this
+        // 原始
+        myBtn.addEventListener('click', function (value) {
+            console.log('this',this);
+        })
+        // 錯誤
+        myBtn.addEventListener('click', () => (
+            console.log('this error',this)      
+        ))
+    </script>

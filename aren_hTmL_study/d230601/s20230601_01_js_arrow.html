@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" id="myBtn">myBtn</button>
+    <script>
+
+        // arrow funciton
+        // 箭頭函式
+
+        function good() {
+            console.log('good');
+        }
+
+        const myBtn = document.getElementById('myBtn');
+        myBtn.addEventListener('click', function () {
+            console.log('myBtn ok');
+        })
+
+        myBtn.addEventListener('click', () => {
+            console.log('myBtn ok');
+        })
+
+        // array.forEach(element => {
+
+        // });
+        // good();
+
+        // arrow function
+        // return
+        let myArr = [1, 2, 3, 4, 5];
+        let mapArr = myArr.map(function (value, key) {
+            return value * 2;
+        });
+
+        let mapArrowArr = myArr.map((value, key) => (value * 2));
+
+        console.log('mapArrrowArr', mapArrowArr);
+
+    </script>
+</body>
+
+</html>

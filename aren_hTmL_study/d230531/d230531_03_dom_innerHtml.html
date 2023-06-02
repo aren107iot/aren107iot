@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>TR elements define table rows</h2>
+    <table id="myTable" style="width:100%">
+
+    </table>
+
+    <script>
+
+        let myObj = {
+            's1': 'amy',
+            's2': 'bob',
+            's3': 'cat',
+        }
+
+        const myTable = document.getElementById('myTable');
+
+        myString = `
+        <tr>
+        <th>座號</th>
+        <th>姓名</th>
+        </tr>
+        `;
+        //     myString += `
+        // <tr>
+        //     <td id="td11">123</td>
+        //     <td id="td12">234</td>
+        //     </tr>
+        //     `;
+        //     myString += `
+        //     <tr>
+        //         <td id="td21">345</td>
+        //         <td id="td22">456</td>
+        //         </tr>
+        //         `;
+        //     myString += `
+        //         <tr>
+        //             <td id="td31">567</td>
+        //             <td id="td32">678</td>
+        //             </tr>
+        //             `;
+
+        for (const key in myObj) {
+            console.log(`${key} => ${myObj[key]}`);
+            myString += `
+            <tr>
+            <td>${key}</td>
+            <td>${myObj[key]}</td>
+            </tr>
+              `;
+        }
+        myTable.innerHTML = myString;
+
+        let myArr = [
+            {
+                'name' : 'amy',
+                'mobile' : '0911-123-123'
+            },
+            {
+                'name' : 'bob',
+                'mobile' : '0911-321-321'
+            }
+        ];
+
+        console.log('myArr typeof',typeof (myArr));
+        console.log('myObj typeof',typeof (myObj));
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- setTimeout -->
+    <!-- 過一段時間做....動作 -->
+    <button type="button" id="myBtn">myBtn</button>
+    <p id="result">原本的文字</p>
+    <!-- <button type="button" id="myBtn2">myBtn2</button> -->
+
+
+    <script>
+
+        const myBtn = document.getElementById('myBtn');
+        const result = document.getElementById('result');
+        // const myBtn2 = document.getElementById('myBtn2');
+
+        // myBtn.addEventListener('click',  setTimeout(function () {
+        //         // alert('hello');
+        //         result.innerText = 'setTimeout ok change text'
+        //     }, 3000)
+
+        // let time = 0;
+        // myBtn.addEventListener('click', function () {
+        //     let myTimer = setInterval(setTimeout(function () {
+        //         console.log('mytime');
+        //         time = time + 1;
+        //         result.innerText = time;
+        //     }, 1000))
+        // })   
+
+        let time = 0;
+        myBtn.addEventListener('click', setInterval(function () {
+            // let myTimer = setInterval(function () {
+            //     console.log('mytime');
+                time = time + 1;
+                result.innerText = time;
+            })
+        , 100) 
+
+
+
+
+
+        // myBtn2.addEventListener('click', function () {
+        //     console.log('my');
+        //     clearInterval(myTimer);
+        //     let myInterVal = setInterval(function () {
+        //         time = time - 1;
+        //         result1.innerText = time;
+        //         if (time <= 0) {
+        //             clearInterval(myInterVal);
+        //         }
+        //     }, 500);
+        // })
+
+
+    </script>
+</body>
+
+</html>
