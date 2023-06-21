@@ -1,49 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style> 
-#main {
-  width: 400px;
-  height: 150px;
-  border: 1px solid #c3c3c3;
-  /* display: -webkit-flex; Safari */
-  display: flex;
-}
-
-#main div {
-  width: 70px;
-  height: 70px;
-}
-
-/* Safari 6.1+ */
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
-/* Standard syntax */
-div#myRedDIV   {order: 2;}
-div#myBlueDIV  {order: 4;}
-div#myGreenDIV {order: 3;}
-div#myPinkDIV  {order: 1;}
-</style>
-</head>
-<body>
+<p>這是標題</p>
+<ol>
+  <li>列表 1</li>
+  <li>列表 2</li>
+  <li>列表 3</li>
+</ol>
+<button id="btn1">增加標題</button>
+<button id="btn2">增加列表</button>
 
-<h1>The order Property</h1>
+<script>
+  $(function () {
+    $("#btn1").click(function () {
+      $("p").append("<b>append 文字</b>");
+    });
+    $("#btn2").click(function () {
+      $("ol").append("<li>append 列表</li>")
+    });
+  })
+</script>
 
-<div id="main">
-  <div style="background-color:coral;" id="myRedDIV"></div>
-  <div style="background-color:lightblue;" id="myBlueDIV"></div>
-  <div style="background-color:lightgreen;" id="myGreenDIV"></div>
-  <div style="background-color:pink;" id="myPinkDIV"></div>
 
-  <div style="border: 1px black solid;">1</div>
-  <div style="border: 1px black solid;">2</div>
-  <div style="border: 1px black solid;">3</div>
-  <div style="border: 1px black solid;">4</div>
-</div>
-
-<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the order property.</p>
-
-<p><b>Note:</b> Safari 6.1 (and newer) supports an alternative, the -webkit-order property.</p>
-
-</body>
-</html>
