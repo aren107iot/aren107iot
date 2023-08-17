@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+</head>
+<style>
+    * {
+        text-align: center;
+        margin: auto;
+        box-sizing: border-box;
+        font-family: 微軟正黑體;
+    }
+
+    .main {
+        margin: auto;
+        width: 350px;
+        border: 1px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px;
+    }
+
+    #best {
+        color: green;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+        border: 1px solid black;
+        width: 350px;
+        padding: 20px;
+    }
+
+    input {
+        width: 45%;
+        margin: 2px;
+    }
+
+    p {
+        width: 100%;
+        margin: 10px;
+    }
+</style>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <h1 style="margin: 20px; color: skyblue;">投籃大賽</h1>
+
+    <div class="main">
+        <h3 style="width: 100%;">分數</h3>
+        <h2 id="best">歷史最高分數 <span id="bestscore">0</span></h2>
+        <p style="color: red;" class="score">0</p>
+
+        <hr style="width: 100%;">
+
+        <p style="color: blue;">0</p>
+    </div>
+    <div class="footer">
+        <input type="button" class="gameover" value="遊戲結束">
+        <input type="button" class="start" value="遊戲開始">
+        <input type="button" class="goal" value="進球" hidden>
+        <input type="button" class="reset" value="重置">
+    </div>
+
+    <script>
+        $(function () {
+            const gameover = $(".gameover")
+            const goal = document.querySelector(".goal")
+            const reset = $(".reset")
+            const bestscore = $("#bestscore")
+            const score = $(".score")
+            const start = $(".start")
+            console.log(gameover);
+            console.log(goal);
+            console.log(reset);
+            console.log(bestscore);
+            console.log(score);
+            let scoretemp = 0
+            let timetemp = 5
+
+            const myInt = setInterval(() => {
+                timetemp--;
+                if (timetemp<1) {
+                    clearInterval(myInt)
+                 }
+            }, 1000)
+
+            $(goal).click(() => {
+                scoretemp = scoretemp + 2
+                console.log(scoretemp);
+                score.text(scoretemp)
+            })
+
+            start.click(() => {
+                console.log($(this));
+                console.log(start);
+                start.hide();
+                $(goal).show();
+            })
+
+            reset.click(() => {
+                scoretemp = 0;
+                scoretemp.text(0)
+            })
+
+            gameover.click(() => {
+                $(goal).hide()
+                start.show();
+                if (scoretemp > score) {
+                    bestcoretemp = score
+                    bestscore.text(scoretemp)
+                }
+            })
+
+
+        })
+
+
+
+    </script>
+
+
+</body>
+
+</html>

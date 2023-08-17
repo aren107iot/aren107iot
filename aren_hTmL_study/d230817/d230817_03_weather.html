@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+</head>
+
+<body>
+
+    <table id="myTable" class="display">
+        <thead>
+            <tr>
+                <td>id</td>
+                <td>area</td>
+                <!-- <td>name</td>
+                <td>address</td>
+                <td>url</td> -->
+            </tr>
+        </thead>
+        <tbody id="myTbody">
+            <!-- insert jquery data -->
+            <!-- foreach php .... -->
+        </tbody>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+
+        <script>
+
+            const myTbody = $('#myTbody');
+            const myTable = $('#myTable');
+
+            $(document).ready(function () {
+                let url = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-AE992CCB-CAEE-4B0D-BBDA-0796C52D8325'
+
+
+                $.ajax({
+                    type: "get",
+                    url: url,
+                    // data: "data",
+                    dataType: "json",
+                    success: function (res) {
+                        // 取參數
+                        // let data =res['records']['location']
+                        // let data = res.records.location
+                        // let data = res->records->location 其他程式語言
+                        let data = res['records']['location']
+                        console.log('data', data);
+
+                        let content = '';
+
+                        for (let i = 0; i < data.length; i++) {
+                            content = content + `
+                    <tr>
+                        <td>${i+1}</td>
+                        <td>${data[i]["locationName"]}</td>
+                                        </tr>                   
+                    `;
+                        }
+                        myTbody.html(content);
+                        myTable.DataTable();
+
+                        //             data.forEach((value, key) => {
+                        //                 console.log('key', key);
+                        //                 console.log('value', value);
+                        //                 content = content + `
+                        // <p>${value.locationName}</p>`
+                        //             });
+                        //             myContainer.append(content)
+                    }
+                });
+
+
+
+
+            });
+        </script>
+
+
+</body>
+
+</html>

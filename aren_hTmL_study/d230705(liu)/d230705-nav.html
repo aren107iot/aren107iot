@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            width: 10%;
+            /* margin: */
+            text-align: center;
+            padding: 3px 6px;
+        }
+
+        ul li:hover {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 50%;
+            border: 3px black double;
+            height: 100px;
+            padding: 20px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <ul>
+        <li>首頁</li>
+        <li>產品介紹</li>
+        <li>最新活動</li>
+        <li>線上購買</li>
+        <li>關於我們</li>
+    </ul>
+    <div class="content">
+
+    </div>
+</body>
+
+</html>
+<script>
+    $("li").hover(
+        function () {
+            $(".content").html($(this).text())
+        }
+    )
+    $("li").on("click", function () {
+        // $("li").css({ background: "white", color: "black", fontWeight: "300" });
+        $(this).siblings.css({ background: "white", color: "black", fontWeight: "300" });
+        $(this).css({ background: "blue", color: "withe", fontWeight: "bold" });
+    })
+</script>

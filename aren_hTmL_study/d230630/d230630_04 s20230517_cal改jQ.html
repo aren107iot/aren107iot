@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #myH1 {
+            background-color: lightblue;
+            text-align: center;
+            height: 100px;
+            margin-top: 10px;
+            padding-top: 30px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 30px;
+        }
+
+        #mySelect {
+            position: fixed;
+            top: 5%;
+            left: 90%;
+            /* width: 40%; */
+            /* background-color: lightgreen; */
+            /* margin-top: 10px; */
+            font-size: 30px;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            /* padding: 8px; */
+            /* width: 20%; */
+
+        }
+
+        tr:nth-child(even) {
+            /* background-color: #dddddd; */
+        }
+
+        #myBtn {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 80%;
+            padding: 30px;
+        }
+
+        input {
+            font-size: 50px;
+            height: 60px;
+            width: 80%
+        }
+
+        #result {
+            border-radius: 25px;
+            position: fixed;
+            top: 15%;
+            right: 10%;
+            display: none;
+            color: red;
+            font-size: 48px;
+            text-align: center;
+            background-color: lightblue;
+            width: 80%;
+            height: 70vh;
+        }
+
+        #result>button {
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            font-size: 30px;
+        }
+
+        #result>div {
+            margin: auto;
+            /* position: absolute; */
+            /* left: 30px; */
+            /* bottom: 150px; */
+            margin-top: 250px;
+            font-size: 30px;
+            text-align: center;
+            width: 50%;
+
+            background-color: lightpink;
+        }
+
+        /* #result{
+            color: red;
+            font-size: 48px;
+            text-align: center;
+            background-color: lightblue;
+            width: 100%;
+        } */
+
+        .view100 {
+            width: 100%;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid">
+
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col offset-1">
+            <p id="myP">
+555
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row border-primary-subtle">
+            <div class="col-3">
+                品項
+            </div>
+            <div class="col-2">
+                圖片
+            </div>
+            <div class="col-2">
+                單價
+            </div>
+            <div class="col-2">
+                數量
+            </div>
+            <div class="col-3">
+                總計
+            </div>
+        </div>
+
+        <div class="row border-primary-subtle">
+            <div class="col-3">
+                1
+            </div>
+            <div class="col-2">
+                <img id="img1" src="https://picsum.photos/id/237/1280/600" class="view100">
+            </div>
+            <div class="col-2">
+                <input type="number" name="price" value="100" min="0">
+            </div>
+            <div class="col-2">
+                <input type="number" name="num" value="1" min="0">
+
+            </div>
+            <div class="col-3">
+                <input type="number" name="total" value="0" readonly>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        // jQuery
+        $(document).ready(function () {
+            let rows = $('.row');
+
+            $('.num').change(function (e) {
+                let numVaule = $(this).val();
+                console.log('numVaule', numVaule);
+
+
+
+                $.each(rows, function (indexInArray, valueOfElement) {
+                    // 跳過row第一行標題
+                    if (indexInArray > 0) {
+                        let priceValue = Number($(valueOfElement).find('.price').val());
+                        let numValue = Number((valueOfElement).find('.num').val());
+                        let result= priceValue * numValue;
+                        
+                        let total = $(valueOfElement).find('.total').val();
+                    }
+                });
+
+
+
+
+            })
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 1.input
+        // 2.計算
+        // 3.output
+
+        // 1.input
+        // 2.計算
+        // 3.output
+
+        // function
+        function myBtnFun() {
+            console.log('myBtnFun ok');
+            // key input 來的東西 都先轉型
+            let item1PriceValue = Number(item1Price.value);
+            // console.log('item1PriceValue', item1PriceValue);
+            // console.log('item1PriceValue typeof', typeof (item1PriceValue));
+            let item1CountValue = Number(item1Count.value);
+            let item1TotalValue = item1PriceValue * item1CountValue;
+            // console.log('item1TotalValue', item1TotalValue);
+            // console.log('item1TotalValue typeof', typeof (item1TotalValue));
+            item1Total.value = item1TotalValue;
+
+
+            // item2
+            let item2PriceValue = Number(item2Price.value);
+            let item2CountValue = Number(item2Count.value);
+            let item2TotalValue = item2PriceValue * item2CountValue;
+            item2Total.value = item2TotalValue;
+
+
+            // item3
+            let item3PriceValue = Number(item3Price.value);
+            let item3CountValue = Number(item3Count.value);
+            let item3TotalValue = item3PriceValue * item3CountValue;
+            item3Total.value = item3TotalValue;
+
+            // 總金額
+            let sum = item1TotalValue + item2TotalValue + item3TotalValue;
+            console.log(sum);
+
+            // 300以上 打八折
+            // sum 原價 300
+            // discount 折扣價 240
+
+            let resultText = `
+                ${item1PriceValue} * ${item1CountValue} = ${item1TotalValue}
+                ${item2PriceValue} * ${item2CountValue} = ${item2TotalValue}
+                ${item3PriceValue} * ${item3CountValue} = ${item3TotalValue}
+                原價 => ${sum}`;
+
+            let discount = 0;
+
+            // resultText += 'xxx'
+            // resultText = resultText + 'xxxx'
+
+            if (sum >= 300) {
+                discount = sum * 0.8;
+                resultText += `
+                300以上打八折
+                優惠價 => ${discount}            
+            `;
+            } else {
+                discount = sum;
+            }
+
+
+            mySpan.innerText = resultText;
+
+            result.style.display = 'block';
+
+        };
+
+        function closeBtnFun() {
+            console.log('closeBtn');
+            result.style.display = 'none';
+        }
+
+
+        function mySelectFun() {
+            console.log('mySelectFun');
+            mySelectValue = mySelect.value;
+            console.log('mySelectValue', mySelectValue);
+            if (mySelectValue == 1) {
+                myH1.style.backgroundColor = 'lightblue';
+            } else {
+                myH1.style.backgroundColor = 'lightpink';
+            }
+        }
+
+
+        // 綁定
+        // item1Price item1Count item1Total
+        // item2Price item2Count item2Total
+        // item3Price item3Count item3Total
+        // myBtn
+        // result
+        let item1Price = document.getElementById('item1Price');
+        let item1Count = document.getElementById('item1Count');
+        let item1Total = document.getElementById('item1Total');
+
+        let item2Price = document.getElementById('item2Price');
+        let item2Count = document.getElementById('item2Count');
+        let item2Total = document.getElementById('item2Total');
+
+        let item3Price = document.getElementById('item3Price');
+        let item3Count = document.getElementById('item3Count');
+        let item3Total = document.getElementById('item3Total');
+
+        let myBtn = document.getElementById('myBtn');
+        let closeBtn = document.getElementById('closeBtn');
+        let result = document.getElementById('result');
+        let mySpan = document.getElementById('mySpan');
+
+        let myH1 = document.getElementById('myH1');
+        let mySelect = document.getElementById('mySelect');
+
+
+    </script>
+</body>
+
+</html>
